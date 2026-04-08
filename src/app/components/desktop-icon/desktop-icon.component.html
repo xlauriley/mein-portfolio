@@ -1,0 +1,20 @@
+<div
+  class="desktop-icon"
+  [class.selected]="isSelected"
+  (click)="onClick()"
+  (blur)="isSelected = false"
+  tabindex="-1">
+
+  <img
+    *ngIf="icon.iconImg"
+    class="desktop-icon__img"
+    [src]="icon.iconImg"
+    [alt]="icon.label"/>
+  <span
+    *ngIf="!icon.iconImg"
+    class="desktop-icon__emoji">
+    {{ icon.icon }}
+  </span>
+
+  <span class="desktop-icon__label">{{ icon.label }}</span>
+</div>

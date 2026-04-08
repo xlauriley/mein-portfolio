@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+:root {
+  --color-bg:           #2D0A1E;
+  --color-dark-pink:    #521535;
+  --color-deeper-pink:  #7A1F4F;
+  --color-pink:         #AC3C74;
+  --color-mid-pink:     #C45A8C;
+  --color-soft-pink:    #D880A8;
+  --color-light-pink:   #EAB0CC;
+  --color-pale-pink:    #FDF2F6;
+
+  --win-gray-light:     #f0f0f0;
+  --win-gray:           #d4d0c8;
+  --win-gray-mid:       #c0c0c0;
+  --win-gray-dark:      #808080;
+  --win-gray-darker:    #404040;
+
+  --font-body: "DotGothic16";
+  --font-system: "DotGothic16";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url('/cursor/normal.png'), auto;
+}
+
+a,
+button,
+[role="button"],
+.folder-window__item,
+.desktop-icon,
+.taskbar__item,
+.taskbar__start-btn,
+.start-menu__item,
+.start-menu__item-right,
+.title-bar,
+.title-bar-controls button,
+.win-menubar span,
+input[type="submit"],
+input[type="button"],
+select {
+  cursor: url('/cursor/pointer.png'), pointer !important;
+}
+
+body {
+  font-family: var(--font-system);
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+}
+
+// ── 98.css Überschreibungen ──────────────────────────────
+
+.title-bar,.title-bar.inactive {
+  background: linear-gradient(
+      to right,
+      var(--color-pink),
+      var(--color-soft-pink)
+  ) !important;
+  padding: 4px 6px !important;
+  min-height: 28px !important;
+}
+
+
+.window {
+  background: #c0c0c0 !important;
+}
+
+.window-body {
+  border: 2px inset #a0a0a0 !important;
+  background: #d4d0c8 !important;  // Leicht wärmeres Grau
+  margin: 4px !important;
+  padding: 4px !important;
+}
+
+.desktop-icon:focus,
+.desktop-icon:focus-visible {
+  outline: none !important;
+}

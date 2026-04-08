@@ -1,0 +1,46 @@
+.desktop-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 2px;
+  text-align: center;
+  outline: none !important;
+  border: 1px solid transparent;
+  pointer-events: all;
+  cursor: url('/cursor/pointer.png'), pointer !important;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px dotted white;
+  }
+
+  &.selected {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px dotted white;
+  }
+
+  &:not(:focus) {
+    background: transparent;
+    border-color: transparent;
+  }
+}
+
+.desktop-icon__img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+.desktop-icon__label {
+  font-size: 0.75rem;
+  color: white;
+  font-family: var(--font-system), sans-serif;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0);
+  word-break: break-word;
+  line-height: 1.2;
+  pointer-events: none;
+}

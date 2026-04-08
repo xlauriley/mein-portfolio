@@ -1,0 +1,70 @@
+<div class="project-window">
+
+  <!-- Linke Spalte: Bilder + Carousel -->
+  <div class="project-window__left">
+
+    <div class="project-window__image-wrapper">
+      <img
+        class="project-window__image"
+        [src]="allImages[currentIndex]"
+        [alt]="project.title"/>
+    </div>
+
+    <div class="project-window__carousel-controls" *ngIf="allImages.length > 1">
+      <button
+        (click)="prev()"
+        [disabled]="allImages.length <= 1">
+        ◄
+      </button>
+      <span class="project-window__counter">
+        {{ currentIndex + 1 }} / {{ allImages.length }}
+      </span>
+      <button
+        (click)="next()"
+        [disabled]="allImages.length <= 1">
+        ►
+      </button>
+    </div>
+
+    <div class="project-window__thumbnails" *ngIf="allImages.length > 1">
+      <img
+        *ngFor="let img of allImages; let i = index"
+        class="project-window__thumb"
+        [class.active]="i === currentIndex"
+        [src]="img"
+        [alt]="project.title"
+        (click)="currentIndex = i"/>
+    </div>
+
+  </div>
+
+  <!-- Rechte Spalte: Infos -->
+  <div class="project-window__right">
+
+    <p class="project-window__description">{{ project.description }}</p>
+
+    <!-- Technologien -->
+    <div class="project-window__tech-section">
+      <p class="project-window__tech-label">VERWENDETE TECHNOLOGIEN</p>
+      <mat-chip-set>
+        <mat-chip
+          *ngFor="let tech of project.technologies"
+          [disabled]="true">
+          {{ tech }}
+        </mat-chip>
+      </mat-chip-set>
+    </div>
+
+    <!-- Link -->
+    <a
+    *ngIf="project.link"
+    [href]="project.link"
+    target="_blank"
+    class="project-window__link-btn">
+    <mat-icon>open_in_new</mat-icon>
+    {{ project.linkLabel || 'Öffnen' }}
+    </a>
+
+  </div>
+
+</div>

@@ -1,0 +1,61 @@
+<div
+  #windowEl
+  class="window win-window"
+  [class.minimized]="window.isMinimized"
+  [class.maximized]="window.isMaximized"
+  [style.left.px]="window.isMaximized ? 0 : window.position.x"
+  [style.top.px]="window.isMaximized ? 0 : window.position.y"
+  [style.width.px]="window.isMaximized ? null : window.size.width"
+  [style.height.px]="window.isMaximized ? null : window.size.height"
+  [style.z-index]="window.zIndex"
+  (mousedown)="onFocus()">
+
+  <!-- Titelleiste – 98.css Klassen -->
+  <div
+    class="title-bar"
+    [class.inactive]="!window.isFocused"
+    (mousedown)="onTitlebarMousedown($event)">
+
+    <div class="title-bar-text">
+      <img
+        *ngIf="window.icon"
+        class="win-titlebar-icon"
+        [src]="window.icon"
+        [alt]="window.title"/>
+      {{ window.title }}
+    </div>
+
+    <div class="title-bar-controls">
+      <button
+        aria-label="Minimize"
+        (mousedown)="onMinimize($event)">
+      </button>
+      <button
+        aria-label="Maximize"
+        (mousedown)="onMaximize($event)">
+      </button>
+      <button
+        aria-label="Close"
+        (mousedown)="onClose($event)">
+      </button>
+    </div>
+  </div>
+
+  <!-- Menüleiste für Ordner -->
+  <div class="win-menubar" *ngIf="window.type === 'folder'">
+    <span>Datei</span>
+    <span>Bearbeiten</span>
+    <span>Ansicht</span>
+    <span>Extras</span>
+  </div>
+
+  <!-- Inhalt -->
+  <div class="win-window__content">
+    <app-folder-window *ngIf="window.type === 'folder'" [data]="window.data"></app-folder-window>
+    <app-text-window *ngIf="window.type === 'text'" [data]="window.data"></app-text-window>
+    <app-project-window *ngIf="window.type === 'project'" [data]="window.data"></app-project-window>
+    <app-home-window *ngIf="window.type === 'home'"></app-home-window>
+    <app-about-window *ngIf="window.type === 'about'" [data]="window.data"></app-about-window>
+  </div>
+
+</div>

@@ -1,0 +1,57 @@
+<div class="login-screen" [class.is-leaving]="isLeaving">
+
+  <img class="login-screen__bubbles" src="images/bubbles.png" alt=""/>
+
+  <div class="login-screen__header">
+    <div class="login-screen__header-left">
+      <span class="login-screen__portfolio-title"><img src="/icons/header-icon.png" width="25"> Mein Portfolio</span>
+    </div>
+    <div class="login-screen__header-divider"></div>
+    <p class="login-screen__header-subtitle">
+      Wähle ein Benutzerkonto um fortzufahren
+    </p>
+  </div>
+
+  <div class="login-screen__users">
+
+    <div
+      class="login-screen__user login-screen__user--admin"
+      [class.shaking]="adminShaking"
+      (click)="onAdminClick()">
+
+      <div class="login-screen__user-avatar admin-avatar"><img src="/icons/admin.png"></div>
+
+      <div class="login-screen__user-info">
+        <span class="login-screen__user-name">
+          Administrator
+          <img class="login-screen__lock-icon" src="icons/lock.png" alt="Gesperrt"/>
+        </span>
+      </div>
+    </div>
+
+    <div class="login-screen__user-divider"></div>
+
+    <div class="login-screen__user">
+      <div class="login-screen__user-avatar guest-avatar"><img src="/icons/guests.png"></div>
+      <div class="login-screen__user-info">
+        <span class="login-screen__user-name">Gast</span>
+        <button class="login-screen__btn" (click)="onGuestLogin()">
+          Anmelden →
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="login-screen__footer">
+    <img
+      class="login-screen__footer-img login-screen__footer-img--back"
+      src="images/foreground.png"
+      alt="Gras mit Blumen"/>
+    <img
+      class="login-screen__footer-img login-screen__footer-img--front"
+      src="images/foreground2.png"
+      alt="Blume mit Schmetterling"/>
+  </footer>
+
+</div>

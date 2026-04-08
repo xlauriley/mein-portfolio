@@ -1,0 +1,50 @@
+.about-window {
+  height: 100%;
+  background: var(--win-gray);
+  font-family: var(--font-system);
+  font-size: 0.82rem;
+}
+
+.about-window__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 4px !important;
+}
+
+// Tab-Panel füllt restlichen Platz
+[role="tabpanel"] {
+  flex: 1;
+  overflow: hidden;
+
+  .window-body {
+    height: 100%;
+    overflow-y: auto;
+  }
+}
+
+.about-window__content {
+  height: 100%;
+}
+
+.about-window__tab {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: black;
+
+  ul {
+    padding-left: 1.2rem;
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+// Tabs klickbar machen
+[role="tab"] {
+  cursor: url('/cursor/pointer.cur'), url('/cursor/pointer.png'), pointer !important;
+}

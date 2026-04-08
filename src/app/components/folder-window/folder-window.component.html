@@ -1,0 +1,46 @@
+<div class="folder-window">
+
+  <div class="folder-window__addressbar">
+
+    <button
+      class="folder-window__nav-btn"
+      [disabled]="navigationStack.length === 0"
+      (click)="goBack()">
+      ◄
+    </button>
+    <button
+      class="folder-window__nav-btn"
+      [disabled]="true">
+      ►
+    </button>
+
+    <div class="folder-window__path">
+      <span>Desktop</span>
+      <span *ngFor="let segment of currentPath"> › {{ segment }}</span>
+    </div>
+  </div>
+
+  <!-- Inhalt -->
+  <div class="folder-window__content" (click)="onContentClick($event)">
+
+    <div class="folder-window__empty" *ngIf="currentItems.length === 0">
+      Dieser Ordner ist leer.
+    </div>
+
+    <div
+      *ngFor="let item of currentItems"
+      class="folder-window__item"
+      [class.selected]="selectedItem?.id === item.id"
+      (click)="onItemClick($event, item)">
+
+      <img
+        class="folder-window__item-img"
+        [src]="item.iconImg"
+        [alt]="item.label"/>
+
+      <span class="folder-window__item-label">{{ item.label }}</span>
+    </div>
+
+  </div>
+
+</div>

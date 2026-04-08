@@ -1,0 +1,146 @@
+.taskbar-overlay {
+  position: fixed;
+  inset: 0;
+  bottom: 40px;
+  z-index: 999;
+}
+
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: var(--win-gray-mid);
+  // Klassischer Windows raised Border
+  border-top: 2px solid var(--win-gray-light);
+  border-left: 2px solid var(--win-gray-light);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 4px;
+  z-index: 1000;
+}
+
+.taskbar__item-icon-img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+  image-rendering: pixelated;
+}
+
+.taskbar__start-btn {
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  height: 30px;
+  background: var(--win-gray-mid);
+  border: 1px inset var(--win-gray-dark);
+  margin: 2px;
+  cursor: url('/cursor/pointer.cur'), url('/cursor/pointer.png'), pointer !important;
+  flex-shrink: 0;
+  justify-content: center;
+
+  &:hover {
+    outline: 1px solid var(--color-deeper-pink);
+  }
+
+  &.active,
+  &:active {
+    // Gedrückt: Border invertieren
+    border-top: 2px solid var(--win-gray-darker);
+    border-left: 2px solid var(--win-gray-darker);
+    border-right: 2px solid var(--win-gray-light);
+    border-bottom: 2px solid var(--win-gray-light);
+  }
+}
+
+.taskbar__start-text {
+  font-family: var(--font-system);
+  font-size: 0.85rem;
+  color: black;
+}
+
+.taskbar__divider {
+  width: 2px;
+  height: 28px;
+  border-left: 1px solid var(--win-gray-dark);
+  border-right: 1px solid var(--win-gray-light);
+  flex-shrink: 0;
+}
+
+.taskbar__windows {
+  display: flex;
+  gap: 3px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.taskbar__item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 2px 8px;
+  height: 28px;
+  min-width: 120px;
+  max-width: 180px;
+  background: var(--win-gray-mid);
+  border: 1px inset var(--win-gray-dark);
+  margin: 2px;
+  cursor: url('/cursor/pointer.png'), pointer !important;
+  font-family: var(--font-system);
+  font-size: 0.7rem;
+  color: black;
+
+  &:hover {
+    outline: 1px solid var(--color-deeper-pink);
+  }
+
+  &.minimized {
+    border: 1px inset var(--win-gray-dark);
+    margin: 2px;
+    background: var(--win-gray);
+  }
+}
+
+.taskbar__item-icon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.taskbar__item-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.taskbar__clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  height: 30px;
+  border-top: 1px solid var(--win-gray-dark);
+  border-left: 1px solid var(--win-gray-dark);
+  border-right: 1px solid var(--win-gray-light);
+  border-bottom: 1px solid var(--win-gray-light);
+  flex-shrink: 0;
+  min-width: 80px;
+  background: var(--win-gray-mid);
+}
+
+.taskbar__time {
+  font-family: var(--font-system);
+  font-size: 0.75rem;
+  color: black;
+  line-height: 1.2;
+}
+
+.taskbar__date {
+  font-family: var(--font-system);
+  font-size: 0.65rem;
+  color: #333;
+  line-height: 1.2;
+}

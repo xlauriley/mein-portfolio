@@ -1,0 +1,65 @@
+// Eigene Positions-Logik bleibt
+.win-window {
+  position: fixed !important;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 150px;
+
+  &.minimized {
+    display: none;
+  }
+
+  &.maximized {
+    width: 100vw !important;
+    height: calc(100vh - 40px) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+.title-bar {
+  flex-shrink: 0;
+  cursor: url('/cursor/pointer.png'), pointer;
+}
+
+.win-titlebar-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 3px;
+  image-rendering: pixelated;
+}
+
+// Menüleiste
+.win-menubar {
+  display: flex;
+  background: var(--win-gray-mid);
+  border-top: none;
+  padding: 1px 2px;
+  flex-shrink: 0;
+
+  span {
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-family: var(--font-system), sans-serif;
+    cursor: url('/cursor/pointer.png'), pointer !important;
+
+    &:hover {
+      background: transparent;
+      outline: 1px solid var(--color-deeper-pink);
+      color: var(--color-deeper-pink);
+    }
+  }
+}
+
+.win-body {
+  flex: 1;
+  overflow: auto;
+  padding: 0 !important;
+
+  border: 2px inset var(--win-gray);
+  margin: 4px !important;
+  background: var(--win-gray);
+}

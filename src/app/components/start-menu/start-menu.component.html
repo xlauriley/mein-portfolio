@@ -1,0 +1,38 @@
+<div class="start-menu">
+
+  <!-- Header -->
+  <div class="start-menu__header">
+    <span class="start-menu__username">Gast</span>
+  </div>
+
+  <div class="start-menu__body">
+    <div class="start-menu__left">
+
+      <button class="start-menu__item" (click)="openProjects()">
+        Meine Projekte
+      </button>
+      <button class="start-menu__item" (click)="openAbout()">
+        Über mich
+      </button>
+      <button class="start-menu__item" (click)="openContact()">
+        Kontakt.txt
+      </button>
+      <button class="start-menu__item" (click)="openCredits()">
+        Credits.txt
+      </button>
+      <button class="start-menu__item" (click)="openTrash()">
+        Papierkorb
+      </button>
+
+      <div class="start-menu__separator"></div>
+
+      <button
+        class="start-menu__item start-menu__item--logout"
+        (click)="onLogout()">
+        Abmelden
+      </button>
+
+    </div>
+  </div>
+
+</div>

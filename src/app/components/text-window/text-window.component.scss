@@ -1,0 +1,77 @@
+.text-window {
+  height: 100%;
+  overflow-y: auto;
+  background: var(--win-gray);
+  font-family: var(--font-system);
+}
+
+.text-window__notepad {
+  display: flex;
+  flex-direction: column;
+  border: 2px inset var(--win-gray-dark);
+  margin: 4px;
+  background: white;
+  height: calc(100% - 8px);
+}
+
+.text-window__header {
+  padding: 0.8rem 0.8rem 0.4rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: black;
+  background: white;
+  white-space: pre;
+}
+
+.text-window__links {
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem 0;
+  overflow-y: auto;
+}
+
+.text-window__link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  cursor: url("/cursor/pointer.png"), pointer;
+  border: 2px dotted var(--win-gray-light);
+}
+
+.text-window__link-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.text-window__link-label {
+  flex-shrink: 0;
+  min-width: 70px;
+  color: black;
+  font-family: 'Courier New', monospace;
+  cursor: url("/cursor/pointer.png"), pointer ;
+
+}
+
+
+// Standalone Content (Credits, normale txt)
+.text-window__content {
+  display: block;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  padding: 0.8rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  color: black;
+  background: white;
+  margin: 4px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}

@@ -1,0 +1,51 @@
+<!-- Klick außerhalb schließt das Start-Menü -->
+<div
+  class="taskbar-overlay"
+  *ngIf="showStartMenu"
+  (click)="closeStartMenu()">
+</div>
+
+<!-- Start-Menü -->
+<app-start-menu
+  *ngIf="showStartMenu"
+  (closed)="closeStartMenu()">
+</app-start-menu>
+
+<div class="taskbar">
+
+  <!-- Start-Button -->
+  <button
+    class="taskbar__start-btn"
+    [class.active]="showStartMenu"
+    (click)="toggleStartMenu()">
+    <span class="taskbar__start-text">Start</span>
+  </button>
+
+  <!-- Trennlinie -->
+  <div class="taskbar__divider"></div>
+
+  <!-- Offene Fenster -->
+  <div class="taskbar__windows">
+    <button
+      *ngFor="let win of windows()"
+      class="taskbar__item"
+      [class.minimized]="win.isMinimized"
+      (click)="onTaskbarItemClick(win)">
+
+      <img
+        *ngIf="win.icon"
+        class="taskbar__item-icon-img"
+        [src]="win.icon"
+        [alt]="win.title"/>
+      <span class="taskbar__item-title">{{ win.title }}</span>
+
+    </button>
+  </div>
+
+  <!-- Uhr + Datum -->
+  <div class="taskbar__clock">
+    <span class="taskbar__time">{{ currentTime }}</span>
+    <span class="taskbar__date">{{ currentDate }}</span>
+  </div>
+
+</div>

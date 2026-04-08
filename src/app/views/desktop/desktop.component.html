@@ -1,0 +1,21 @@
+<div class="desktop">
+
+  <!-- Desktop Icons -->
+  <div class="desktop__icons">
+    <app-desktop-icon
+      *ngFor="let icon of desktopIcons"
+      [icon]="icon"
+      (doubleClicked)="onIconDoubleClick($event)">
+    </app-desktop-icon>
+  </div>
+
+  <!-- Fenster -->
+  <app-window
+    *ngFor="let win of windows(); trackBy: trackWindow"
+    [window]="win">
+  </app-window>
+
+  <!-- Taskbar -->
+  <app-taskbar></app-taskbar>
+
+</div>

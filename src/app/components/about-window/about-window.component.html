@@ -1,0 +1,38 @@
+<div class="about-window">
+  <div class="window-body about-window__body">
+
+    <!-- 98.css Tabs -->
+    <menu role="tablist">
+      <li
+        role="tab"
+        [attr.aria-selected]="activeTab === 'cv'"
+        (click)="setTab('cv')">
+        <a>📄 Lebenslauf</a>
+      </li>
+      <li
+        role="tab"
+        [attr.aria-selected]="activeTab === 'hobbys'"
+        (click)="setTab('hobbys')">
+        <a>🎨 Hobbys</a>
+      </li>
+    </menu>
+
+    <!-- Tab-Inhalt -->
+    <div class="window" role="tabpanel">
+      <div class="window-body about-window__content">
+
+        <!-- Lebenslauf Tab -->
+        <div *ngIf="isTab('cv')" class="about-window__tab">
+          <img src="/images/cv.png">
+
+        <!-- Hobbys Tab -->
+        <div *ngIf="isTab('hobbys')" class="about-window__tab">
+          <p>Hier kannst du etwas über deine Hobbys schreiben...</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

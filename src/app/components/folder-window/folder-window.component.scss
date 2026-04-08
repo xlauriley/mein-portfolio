@@ -1,0 +1,139 @@
+.folder-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #d4d0c8;
+  font-family: var(--font-system);
+  font-size: 0.8rem;
+}
+
+// ── Adressleiste ─────────────────────────────────────────
+
+.folder-window__addressbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px 4px;
+  background: #c0c0c0;
+  border: 1px solid #a0a0a0;
+  border-top: none;
+  flex-shrink: 0;
+}
+
+// Punkt 1.1: Schmalere Buttons
+.folder-window__nav-btn {
+  width: 20px;
+  height: 20px;
+  font-size: 0.55rem;
+  background: var(--win-gray-mid);
+  border: 1px solid var(--win-gray-dark);
+  cursor: url('/cursor/pointer.png'), pointer !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: url('/cursor/normal.png'), auto !important;
+  }
+
+  &:not(:disabled):hover {
+    background: var(--win-gray-mid);
+    outline: 1px solid var(--color-deeper-pink);
+    color: var(--color-deeper-pink);
+  }
+
+  &:not(:disabled):active {
+    border-color: var(--win-gray-darker);
+  }
+}
+
+.folder-window__path {
+  flex: 1;
+  background: white;
+  border: 1px inset var(--win-gray-dark);
+  padding: 1px 6px;
+  font-size: 0.8rem;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  color: black;
+}
+
+// ── Inhalt ───────────────────────────────────────────────
+
+.folder-window__content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  overflow-y: auto;
+  border: 2px inset #a0a0a0;
+  margin: 4px;
+  background: white;
+}
+
+.folder-window__empty {
+  width: 100%;
+  text-align: center;
+  color: #888;
+  padding: 2rem;
+  font-size: 0.8rem;
+}
+
+.folder-window__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: 80px;
+  padding: 0.4rem;
+  cursor: url('/cursor/pointer.png'), pointer !important;
+  border: 1px solid transparent;
+  pointer-events: all;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid var(--color-deeper-pink);
+    outline: 1px solid var(--color-soft-pink);
+  }
+
+  &.selected {
+    background: var(--color-deeper-pink);
+    border-color: var(--color-deeper-pink);
+
+    .folder-window__item-label {
+      color: white;
+    }
+  }
+}
+
+.folder-window__item-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.folder-window__item-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  pointer-events: none;
+  image-rendering: pixelated;
+}
+
+.folder-window__item-label {
+  font-size: 0.72rem;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.2;
+  color: black;
+  pointer-events: none;
+}
