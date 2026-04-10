@@ -54,12 +54,12 @@
     border-left: 1px solid var(--win-gray-light);
     border-right: 1px solid var(--win-gray-darker);
     border-bottom: 1px solid var(--win-gray-darker);
-    cursor: url('/cursor/pointer.png'), pointer !important;
+    cursor: pointer;
     font-size: 0.7rem;
 
     &:disabled {
       opacity: 0.3;
-      cursor: url('/cursor/normal.png'), auto !important;
+      cursor: auto;
     }
 
     &:not(:disabled):hover {
@@ -93,7 +93,7 @@
   width: 50px;
   height: 40px;
   object-fit: cover;
-  cursor: url('/cursor/pointer.png'), pointer !important;
+  cursor: pointer;
   opacity: 0.5;
   border: 1px solid transparent;
   flex-shrink: 0;
@@ -166,7 +166,7 @@
   text-decoration: none;
   font-family: var(--font-system);
   font-size: 0.8rem;
-  cursor: url('/cursor/pointer.png'), pointer !important;
+  cursor: pointer;
   width: fit-content;
   margin-top: auto;
 

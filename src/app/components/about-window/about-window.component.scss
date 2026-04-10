@@ -45,6 +45,5 @@
 }
 
 // Tabs klickbar machen
-[role="tab"] {
-  cursor: url('/cursor/pointer.cur'), url('/cursor/pointer.png'), pointer !important;
+[role="tab"] {cursor: pointer;
 }

@@ -24,25 +24,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url('/cursor/normal.png'), auto;
-}
-
-a,
-button,
-[role="button"],
-.folder-window__item,
-.desktop-icon,
-.taskbar__item,
-.taskbar__start-btn,
-.start-menu__item,
-.start-menu__item-right,
-.title-bar,
-.title-bar-controls button,
-.win-menubar span,
-input[type="submit"],
-input[type="button"],
-select {
-  cursor: url('/cursor/pointer.png'), pointer !important;
 }
 
 body {
@@ -72,7 +53,7 @@ body {
 
 .window-body {
   border: 2px inset #a0a0a0 !important;
-  background: #d4d0c8 !important;  // Leicht wärmeres Grau
+  background: #d4d0c8 !important;
   margin: 4px !important;
   padding: 4px !important;
 }

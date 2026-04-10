@@ -1,0 +1,10 @@
+* {cursor: url('/cursor/normal.png'), auto;}
+
+a, button, [role="button"],
+.folder-window__item,
+.desktop-icon,
+.taskbar__item,
+.taskbar__start-btn,
+.start-menu__item {
+  cursor: url('/cursor/pointer.png'), pointer;
+}

@@ -84,7 +84,6 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1rem 2rem;
-  cursor: pointer;
   width: 420px;
   transition: background 0.15s;
   background: rgba(255,255,255,0.5);
@@ -154,7 +153,6 @@
   padding: 0.3rem 1rem;
   font-family: var(--font-system);
   font-size: 0.85rem;
-  cursor: pointer;
   width: fit-content;
   color: black;
   letter-spacing: 1.5px;
@@ -206,7 +204,6 @@
 }
 
 .login-screen__user--admin {
-  cursor: url('/cursor/normal.cur'), url('/cursor/normal.png'), not-allowed !important;
   opacity: 0.8;
 
   &:hover {

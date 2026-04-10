@@ -38,7 +38,7 @@
   background: var(--win-gray-mid);
   border: 1px inset var(--win-gray-dark);
   margin: 2px;
-  cursor: url('/cursor/pointer.cur'), url('/cursor/pointer.png'), pointer !important;
+  cursor: pointer;
   flex-shrink: 0;
   justify-content: center;
 
@@ -88,7 +88,7 @@
   background: var(--win-gray-mid);
   border: 1px inset var(--win-gray-dark);
   margin: 2px;
-  cursor: url('/cursor/pointer.png'), pointer !important;
+  cursor: pointer;
   font-family: var(--font-system);
   font-size: 0.7rem;
   color: black;
