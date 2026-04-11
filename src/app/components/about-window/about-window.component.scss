@@ -1,5 +1,5 @@
 .about-window {
-  height: 100%;
+  height: 95%;
   background: var(--win-gray);
   font-family: var(--font-system);
   font-size: 0.82rem;
@@ -9,41 +9,299 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 4px !important;
+  padding: 4px;
 }
 
-// Tab-Panel füllt restlichen Platz
-[role="tabpanel"] {
+.about-window__panel {
   flex: 1;
   overflow: hidden;
-
-  .window-body {
-    height: 100%;
-    overflow-y: auto;
-  }
+  margin-top: -2px;  // 98.css Tab-Panel nahtlos anschließen
 }
 
 .about-window__content {
-  height: 100%;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+[role="tab"] {
+  cursor: url('/cursor/pointer.png'), pointer !important;
 }
 
 .about-window__tab {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
+  padding: 0.5rem;
   font-size: 0.82rem;
   line-height: 1.6;
   color: black;
+}
 
-  ul {
-    padding-left: 1.2rem;
+.about-window__profile-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
 
-    li {
-      margin-bottom: 0.2rem;
-    }
+.about-window__properties {
+  flex: 1;
+  border: 2px inset var(--win-gray-dark);
+  background: white;
+}
+
+.about-window__profile-img-wrapper {
+  flex-shrink: 0;
+  border: 2px inset var(--win-gray-dark);
+  background: white;
+  padding: 2px;
+}
+
+.about-window__profile-img {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+// ── Steckbrief ────────────────────────────────────────────
+
+.about-window__properties {
+  border: 2px inset var(--win-gray-dark);
+  background: white;
+}
+
+.about-window__properties-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  background: var(--win-gray-mid);
+  border-bottom: 1px solid var(--win-gray-dark);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.about-window__properties-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.about-window__table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr:nth-child(even) {
+    background: #f5f5f5;
   }
 }
 
-// Tabs klickbar machen
-[role="tab"] {cursor: pointer;
+.about-window__table-label {
+  padding: 3px 8px;
+  color: #555;
+  font-size: 0.78rem;
+  width: 40%;
+  border-right: 1px solid var(--win-gray-mid);
+  white-space: nowrap;
+}
+
+.about-window__table-value {
+  padding: 3px 8px;
+  color: black;
+  font-size: 0.78rem;
+}
+
+.about-window__divider {
+  height: 1px;
+  background: var(--win-gray-dark);
+  border-bottom: 1px solid var(--win-gray-light);
+}
+
+// ── Persönlicher Text ─────────────────────────────────────
+
+.about-window__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: #222;
+}
+
+// ── Skills ────────────────────────────────────────────────
+
+.about-window__skills-intro {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #333;
+  font-style: italic;
+}
+
+.about-window__skills-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.about-window__skills-title {
+  font-weight: bold;
+  font-size: 0.78rem;
+  color: var(--color-deeper-pink);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-window__skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.about-window__skill-chip {
+  background: var(--win-gray-mid);
+  border-top: 1px solid var(--win-gray-light);
+  border-left: 1px solid var(--win-gray-light);
+  border-right: 1px solid var(--win-gray-darker);
+  border-bottom: 1px solid var(--win-gray-darker);
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-family: var(--font-system);
+}
+
+// ── Kreativität ───────────────────────────────────────────
+
+.about-window__kreativ-intro {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #333;
+  font-style: italic;
+}
+
+.about-window__kreativ-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.about-window__kreativ-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.6rem;
+  background: white;
+  border: 2px inset var(--win-gray-dark);
+  text-align: center;
+}
+
+.about-window__kreativ-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.about-window__kreativ-label {
+  font-size: 0.72rem;
+  color: #333;
+}
+
+// ── Musik ─────────────────────────────────────────────────
+
+.about-window__musik-text {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-window__spotify {
+  border: 2px inset var(--win-gray-dark);
+  border-radius: 4px;
+  display: block;
+}
+
+.about-window__album {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  background: white;
+  border: 2px inset var(--win-gray-dark);
+  padding: 0.6rem;
+}
+
+.about-window__album-title {
+  font-weight: bold;
+  font-size: 0.78rem;
+  color: var(--color-deeper-pink);
+}
+
+.about-window__album-text {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: #333;
+  font-style: italic;
+}
+
+.about-window__top-songs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-top: 1px solid var(--win-gray-mid);
+  padding-top: 0.4rem;
+}
+
+.about-window__top-songs-title {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.about-window__song {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  padding: 4px;
+  border-bottom: 1px dashed var(--win-gray-mid);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.about-window__song-rank {
+  font-size: 0.72rem;
+  color: var(--color-deeper-pink);
+  font-weight: bold;
+  flex-shrink: 0;
+  min-width: 20px;
+}
+
+.about-window__song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.about-window__song-name {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.about-window__song-desc {
+  font-size: 0.72rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.about-window__spotify {
+  border: 2px inset var(--win-gray-dark);
+  border-radius: 4px;
+  display: block;
+}
+
+
+// ── Lebenslauf ────────────────────────────────────────────
+
+.about-window__cv {
+  border: 2px inset var(--win-gray-dark);
 }

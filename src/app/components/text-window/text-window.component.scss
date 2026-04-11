@@ -55,12 +55,9 @@
   min-width: 70px;
   color: black;
   font-family: 'Courier New', monospace;
-  "/cursor/pointer.png"), pointer ;
-
+  cursor: pointer;
 }
 
-
-// Standalone Content (Credits, normale txt)
 .text-window__content {
   display: block;
   width: calc(100% - 8px);

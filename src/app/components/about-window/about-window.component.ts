@@ -12,14 +12,24 @@ export class AboutWindowComponent {
 
   @Input() data: any;
 
-  activeTab: string = 'cv';
+  activeTab: string = 'ich';
+
+  isTab(tab: string): boolean {
+    return this.activeTab === tab;
+  }
 
   setTab(tab: string): void {
     this.activeTab = tab;
   }
 
-  // Hilfsmethode statt direktem Vergleich im Template
-  isTab(tab: string): boolean {
-    return this.activeTab === tab;
-  }
+  // Steckbrief Daten
+  steckbrief = [
+    { label: 'Name',         value: 'Laura Lautenschläger' },
+    { label: 'Spitzname',    value: 'Lauri' },
+    { label: 'Wohnort',      value: 'Nähe von Mannheim' },
+    { label: 'Geburtstag',   value: '03.02.2000' },
+    { label: 'Sternzeichen', value: 'Wassermann' },
+    { label: 'Lieblingsfarbe', value: 'Lila, Grün & Pink' },
+    { label: 'Status',       value: 'Open for Work' }
+  ];
 }

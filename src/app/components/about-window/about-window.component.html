@@ -5,34 +5,263 @@
     <menu role="tablist">
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'cv'"
-        (click)="setTab('cv')">
-        <a>📄 Lebenslauf</a>
+        [attr.aria-selected]="activeTab === 'Ich'"
+        (click)="setTab('ich')">
+        <a>Hi, ich bin Laura</a>
       </li>
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'hobbys'"
-        (click)="setTab('hobbys')">
-        <a>🎨 Hobbys</a>
+        [attr.aria-selected]="activeTab === 'Skills'"
+        (click)="setTab('skills')">
+        <a>Skills</a>
+      </li>
+      <li
+        role="tab"
+        [attr.aria-selected]="activeTab === 'Kreativitaet'"
+        (click)="setTab('kreativitaet')">
+        <a>Kreativität</a>
+      </li>
+      <li
+        role="tab"
+        [attr.aria-selected]="activeTab === 'Musik'"
+        (click)="setTab('musik')">
+        <a>Musik</a>
+      </li>
+      <li
+        role="tab"
+        [attr.aria-selected]="activeTab === 'cv'"
+        (click)="setTab('cv')">
+        <a>Lebenslauf</a>
       </li>
     </menu>
 
     <!-- Tab-Inhalt -->
-    <div class="window" role="tabpanel">
+    <div class="window about-window__panel" role="tabpanel">
       <div class="window-body about-window__content">
 
-        <!-- Lebenslauf Tab -->
-        <div *ngIf="isTab('cv')" class="about-window__tab">
-          <img src="images/cv.png">
+        <!-- Tab 1: Ich -->
+        <div *ngIf="isTab('ich')" class="about-window__tab">
 
-        <!-- Hobbys Tab -->
-        <div *ngIf="isTab('hobbys')" class="about-window__tab">
-          <p>Hier kannst du etwas über deine Hobbys schreiben...</p>
+          <div class="about-window__profile-row">
+
+            <div class="about-window__properties">
+              <div class="about-window__properties-header">
+                <img src="icons/computer.png" alt="Profil" class="about-window__properties-icon"/>
+                <span>Eigenschaften: Laura</span>
+              </div>
+              <table class="about-window__table">
+                <tbody>
+                <tr *ngFor="let item of steckbrief">
+                  <td class="about-window__table-label">{{ item.label }}</td>
+                  <td class="about-window__table-value">{{ item.value }}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="about-window__profile-img-wrapper">
+              <img
+                class="about-window__profile-img"
+                src="images/profile2.PNG"
+                alt="Laura"/>
+            </div>
+
+          </div>
+
+          <div class="about-window__divider"></div>
+
+          <div class="about-window__text">
+            <p>
+              Ich bin Laura, 26 Jahre alt und lebe in der Nähe von Mannheim.
+              Seit Januar habe ich meinen Bachelor in Medieninformatik in der
+              Tasche und stehe jetzt am Anfang eines neuen Kapitels.
+            </p>
+            <p>
+              Was mich antreibt? Der Wunsch, Dinge zu erschaffen die sich gut
+              anfühlen – visuell, emotional und im Miteinander. Ich lebe gerne
+              in Harmonie, umgebe mich mit positiver Energie und schätze
+              Menschen die authentisch sind. Meine engsten Freundinnen –
+              wir nennen uns liebevoll die "Fairys" – sind ein großer Teil davon.
+            </p>
+            <p>
+              Ich bin eine Katzenperson durch und durch, war fast zehn Jahre
+              lang stolze Kaninchenmama (beide aus dem Tierheim ♥) und finde
+              in der Natur – besonders im Frühling – immer wieder meinen
+              Ausgleich.
+            </p>
+            <p>
+              Beruflich suche ich nach einem Ort wo Kreativität kein Bonus
+              ist, sondern zum Alltag gehört. Am liebsten in einem Team
+              das zusammenhält.
+            </p>
+          </div>
+
         </div>
 
-      </div>
-    </div>
+        <!-- ── Tab 2: Skills ─────────────────────────── -->
+        <div *ngIf="isTab('skills')" class="about-window__tab">
 
+          <p class="about-window__skills-intro">
+            Hier ist eine schnelle Übersicht über Kenntnisse die ich besitze und mir aktuell aneigne.
+          </p>
+
+          <div class="about-window__skills-section">
+            <p class="about-window__skills-title">Design & Kreativ</p>
+            <div class="about-window__skills-list">
+              <span class="about-window__skill-chip">Adobe Illustrator</span>
+              <span class="about-window__skill-chip">Adobe XD</span>
+              <span class="about-window__skill-chip">Affinity</span>
+              <span class="about-window__skill-chip">Balsamiq</span>
+              <span class="about-window__skill-chip">Canva</span>
+              <span class="about-window__skill-chip">Figma</span>
+              <span class="about-window__skill-chip">UI/UX Design</span>
+              <span class="about-window__skill-chip">Wireframing</span>
+            </div>
+          </div>
+
+          <div class="about-window__skills-section">
+            <p class="about-window__skills-title">Entwicklung</p>
+            <div class="about-window__skills-list">
+              <span class="about-window__skill-chip">Angular</span>
+              <span class="about-window__skill-chip">Angular Material</span>
+              <span class="about-window__skill-chip">CSS / SCSS</span>
+              <span class="about-window__skill-chip">HTML</span>
+              <span class="about-window__skill-chip">JavaScript</span>
+              <span class="about-window__skill-chip">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="about-window__skills-section">
+            <p class="about-window__skills-title">Weitere Tools</p>
+            <div class="about-window__skills-list">
+              <span class="about-window__skill-chip">GitHub</span>
+              <span class="about-window__skill-chip">Jimdo</span>
+              <span class="about-window__skill-chip">Mixamo</span>
+              <span class="about-window__skill-chip">Shopify</span>
+              <span class="about-window__skill-chip">Unity</span>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ── Tab 3: Kreativität ─────────────────────── -->
+        <div *ngIf="isTab('kreativitaet')" class="about-window__tab">
+          <p class="about-window__kreativ-intro">
+            Kreativität ist für mich keine Freizeitbeschäftigung –
+            es ist eine Lebensweise. Egal ob mit den Händen
+            oder der Kamera: ich erschaffe ständig etwas.
+          </p>
+
+          <div class="about-window__kreativ-grid">
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🧶</span>
+              <span class="about-window__kreativ-label">Häkeln & DIY</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🎨</span>
+              <span class="about-window__kreativ-label">Malen & Zeichnen</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🪆</span>
+              <span class="about-window__kreativ-label">Clay Modellieren</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">💄</span>
+              <span class="about-window__kreativ-label">Schminken & Styling</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">📸</span>
+              <span class="about-window__kreativ-label">Fotoshooting & Videos</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">💃</span>
+              <span class="about-window__kreativ-label">Tanzen & Singen</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🏃‍♀️</span>
+              <span class="about-window__kreativ-label">Joggen & Dehnen</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🌿</span>
+              <span class="about-window__kreativ-label">Natur & Frühling</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Tab 4: Musik ───────────────────────────── -->
+        <div *ngIf="isTab('musik')" class="about-window__tab">
+
+          <p class="about-window__musik-text">
+            Musik begleitet mich durch jeden Tag – beim Sport, beim Arbeiten,
+            beim Entspannen. Konzerte sind für mich besondere Erlebnisse
+            und ich habe das Glück schon fast alle meine Lieblingskünstler
+            live gesehen zu haben. ♥
+          </p>
+
+          <!-- Spotify Widget: HADES Album -->
+          <div class="about-window__album">
+            <p class="about-window__album-title">🖤 Aktuell auf Repeat: HADES – Melanie Martinez</p>
+            <p class="about-window__album-text">
+              Dieses Album läuft bei mir gerade rauf und runter. Was mich so fesselt:
+              Melanie spricht Themen an die in der Gesellschaft oft totgeschwiegen werden –
+              die aktuelle Weltlage, Ungerechtigkeit, Tabus. Und das in einer Ästhetik
+              die mich sofort in ihren Bann zieht.
+            </p>
+
+            <!-- Meine Top 3 Songs -->
+            <div class="about-window__top-songs">
+              <p class="about-window__top-songs-title">Meine Top 3 Songs:</p>
+
+              <div class="about-window__song">
+                <span class="about-window__song-rank">01</span>
+                <div class="about-window__song-info">
+                  <span class="about-window__song-name">Monopoly Man - Track Nr. 7</span>
+                  <span class="about-window__song-desc">
+            Eine messerscharfe Abrechnung mit Gier und Machtmissbrauch –
+            mit einem Beat der sich im Kopf festsetzt.
+          </span>
+                </div>
+              </div>
+
+              <div class="about-window__song">
+                <span class="about-window__song-rank">02</span>
+                <div class="about-window__song-info">
+                  <span class="about-window__song-name">Hell's Front Porch - Track Nr. 16</span>
+                  <span class="about-window__song-desc">
+            Düster, poetisch und trotzdem irgendwie tröstlich.
+            Genau das richtige wenn die Welt zu laut wird.
+          </span>
+                </div>
+              </div>
+
+              <div class="about-window__song">
+                <span class="about-window__song-rank">03</span>
+                <div class="about-window__song-info">
+                  <span class="about-window__song-name">Batshit Intelligence - Track Nr. 12</span>
+                  <span class="about-window__song-desc">
+            Der Titel sagt alles. Ein bisschen chaotisch, ein bisschen
+            provokant – und ich liebe es.
+          </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Spotify Embed -->
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                    src="https://open.spotify.com/embed/album/7jwikgbD6e5Oht9gJzaR3l?utm_source=generator&theme=0"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            </iframe>
+          </div>
+
+        </div>
+
+        <!-- ── Tab 5: Lebenslauf ──────────────────────── -->
+        <div *ngIf="isTab('cv')" class="about-window__tab">
+          <img src="/images/cv.png" alt="Lebenslauf" class="about-window__cv">
+        </div>
   </div>
+</div>
 </div>
 </div>
