@@ -1,7 +1,6 @@
 .home-window {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background: var(--win-gray);
   font-family: var(--font-system);
 }
@@ -16,14 +15,14 @@
   flex: 1;
 }
 
-.home-window__avatar {
+/*.home-window__avatar {
   width: 120px;
   height: 120px;
   object-fit: cover;
   border: 2px inset var(--win-gray-dark);
   flex-shrink: 0;
   align-self: flex-start;
-}
+}*/
 
 .home-window__text {
   display: flex;
@@ -41,13 +40,12 @@
 .home-window__subtitle {
   font-size: 0.85rem;
   color: var(--color-deeper-pink);
-  font-style: italic;
 }
 
 .home-window__description {
   font-size: 0.82rem;
   line-height: 1.6;
-  color: #333;
+  color: black;
   margin-top: 0.3rem;
 }
 

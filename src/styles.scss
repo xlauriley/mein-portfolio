@@ -46,14 +46,9 @@ body {
   min-height: 28px !important;
 }
 
-
-.window {
-  background: #c0c0c0 !important;
-}
-
 .window-body {
-  border: 2px inset #a0a0a0 !important;
-  background: #d4d0c8 !important;
+  border: 2px inset var(--win-gray-mid) !important;
+  background: var(--win-gray) !important;
   margin: 4px !important;
   padding: 4px !important;
 }
@@ -61,4 +56,13 @@ body {
 .desktop-icon:focus,
 .desktop-icon:focus-visible {
   outline: none !important;
+}
+
+.win-window__content {
+  width: 100%;
+  height: calc(100% - 8px);
+}
+
+.win-window {
+  height: auto !important;
 }

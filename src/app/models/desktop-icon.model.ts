@@ -3,6 +3,6 @@ export interface DesktopIcon {
   label: string;
   icon?: string;
   iconImg?: string;
-  type: 'folder' | 'text' | 'project' | 'home' | 'about';
+  type: 'folder' | 'text' | 'project' | 'home' | 'about' | 'minesweeper';
   data?: any;
 }

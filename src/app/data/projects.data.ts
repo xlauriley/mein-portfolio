@@ -13,9 +13,11 @@ export const PROJECTS: Project[] = [
       'images/project-1/Buchung.png',
       'images/project-1/FAQ-smart.png',
       'images/project-1/kontakt-smart.png',
+      'images/project-1/Skizze.png',
+      'images/project-1/wireframes.png'
     ],
-    description: 'Im Rahmen meiner Bachelorarbeit untersuchte ich, welchen Einfluss visuelle Gestaltungselemente – insbesondere Farben, Formen und Animationen – auf Vertrauen, Nutzererfahrung und Buchungsbereitschaft auf Tiersitter-Plattformen haben. Auf Basis einer Fokusgruppe und ausführlicher Theorierecherche entwickelte ich ein vollständiges Konzept für Desktop und Smartphone: von ersten Skizzen über Wireframes bis hin zu einem High-Fidelity Prototyp, der abschließend in Usability-Tests evaluiert wurde. Die anschließende Umsetzung der Webseite erfolgte mit Angular nach dem Bachelorabschluss.',
-    technologies: ['Adobe XD', 'HTML', 'CSS', 'JavaScript', 'Angular'],
+    description: 'Im Rahmen meiner Bachelorarbeit untersuchte ich, welchen Einfluss visuelle Gestaltungselemente – insbesondere Farben, Formen und Animationen – auf Vertrauen, Nutzererfahrung und Buchungsbereitschaft auf Tiersitter-Plattformen haben. Auf Basis einer Fokusgruppe und ausführlicher Theorierecherche entwickelte ich ein vollständiges Konzept für Desktop und Smartphone: von ersten Skizzen über Wireframes (siehe letzte Bilder) bis hin zu einem High-Fidelity Prototyp. Der finale Prototyp wurde anschließend in Usability-Tests evaluiert. Nach meinem Bachelorabschluss habe ich das Konzept mit dem Framework Angular technisch umgesetzt.',
+    technologies: ['Adobe Illustrator', 'Adobe XD', 'Angular', 'Balsamiq'],
     link: 'https://github.com/xlauriley/fabis-katzensitterservice',
     linkLabel: 'Code auschecken'
   },
@@ -29,7 +31,7 @@ export const PROJECTS: Project[] = [
       'images/project-2/Über-mich.png',
       'images/project-2/Leistungen.png'
     ],
-    description: 'Relaunch der bestehenden Website von Michael Kögel: Die Seite wurde vollständig neu aufgesetzt, der Code modernisiert und das Design behutsam überarbeitet. Anlass war ein Wechsel des Hosting-Anbieters, der eine neue, saubere Codeversion erforderte.',
+    description: 'Relaunch der bestehenden Website von Michael Kögel im Zuge eines Hosting-Wechsels. Dabei wurde die Seite von einem Baukastensystem auf eine individuelle Lösung mit reinem HTML, CSS und Javascript umgestellt. Das Design wurde nur an wenigen Stellen behutsam angepasst.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://human-centered-digital-transformation.com/',
     linkLabel: 'Website besuchen'
@@ -44,7 +46,7 @@ export const PROJECTS: Project[] = [
       'images/project-3/Kontakt.png',
       'images/project-3/Karriere.png'
     ],
-    description: 'Neugestaltung und Relaunch der Unternehmenswebsite mit Jimdo. Ziel war eine übersichtlichere Struktur und ein moderneres Erscheinungsbild – mit klarem Fokus auf eine ansprechende Nutzerführung.',
+    description: 'Relaunch der Unternehmenswebseite mit Fokus auf einen moderneren Look und eine klare Struktur. Ziel des Projekts war es, die Inhalte übersichtlicher aufzubereiten und die Nutzerführung zu verbessern. Dabei entstand ein neues Design, das die wichtigsten Informationen schnell zugänglich macht und insgesamt zeitgemäßer wirkt.',
     technologies: ['Jimdo'],
     link: 'https://www.dienstleistungen-tuttelberg.de/',
     linkLabel: 'Website besuchen'
@@ -58,11 +60,13 @@ export const PROJECTS: Project[] = [
       'images/project-4/homepage.png',
       'images/project-4/leistungen.png',
       'images/project-4/reparatur-page.png',
-      'images/project-4/leistungen-smart.png',
-      'images/project-4/reparatur-page-smart.png'
+      'images/project-4/homepage-smart.png',
+      'images/project-4/reparatur-page-smart.png',
+      'images/project-4/wireframe.png',
+      'images/project-4/webseiteVorher.JPG'
     ],
-    description: 'Relaunch der Website für Elektro Bleh, einem lokalen Elektrobetrieb. Die Seite wurde von Grund auf neu entwickelt – mit modernerem Code und überarbeitetem Design. Die Firma existiert inzwischen nicht mehr, der Code ist jedoch auf GitHub einsehbar.',
-    technologies: ['Adobe XD', 'HTML', 'CSS', 'JavaScript'],
+    description: 'Dieses Projekt entstand im Rahmen des Studienmoduls "User Interface Design Projekt", in dem die Aufgabe darin bestand, eine bestehende Webseite hinsichtlich ihrer Benutzerfreundlichkeit zu optimieren. So schnappte ich mir die veraltete Webseite meines Onkels (siehe letztes Bild) und entwickelte ein neues Designkonzept. Nach Abschluss des Moduls setzte ich die Webseite mit HTML, CSS und Javascript um. Diese Seite war meine erste vollständig selbst gestaltete und programmierte Webseite.',
+    technologies: ['Adobe XD', 'Balsamiq', 'HTML', 'CSS', 'JavaScript'],
     link: 'https://github.com/xlauriley/elektro-bleh',
     linkLabel: 'Code auschecken'
   },
@@ -75,7 +79,7 @@ export const PROJECTS: Project[] = [
       'images/project-5/logo-final.png',
       'images/project-5/heckscheibe.jpeg'
     ],
-    description: 'Logoentwicklung für Fabis kleinen Katzensitter-Service. Das Logo wurde für verschiedene Einsatzbereiche erstellt: Website, Instagram-Auftritt sowie als Werbegrafik für die Auto-Heckscheibe.',
+    description: "Logoentwicklung für Fabi's kleiner Katzensitter-Service. Da der Name bewusst sich an 'Kiki's kleiner Lieferservice' anlehnt, war der Wunsch der Kundin ebenfalls das Logo entsprechend anzupassen. So entstand eine kleine Hexe, die auf einem Besen fliegt und von ihren Katzen begleitet wird. Das Logo wurde für verschiedene Einsatzbereiche erstellt, darunter Webseite, Instagram und HEckscheibe des Autos.",
     technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/fabiskatzensitten',
     linkLabel: 'Auf Instagram ansehen'
@@ -88,9 +92,10 @@ export const PROJECTS: Project[] = [
     images: [
       'images/project-6/logo-final.png',
       'images/project-6/visitenkarte-front.jpeg',
-      'images/project-6/visitenkarte-back.jpeg'
+      'images/project-6/visitenkarte-back.jpeg',
+      'images/project-6/inspo.jpeg'
     ],
-    description: 'Logodesign für das Café Cupcake Fee. Das verspielte Erscheinungsbild spiegelt den Charakter des Projekts wider – süß, kreativ und einprägsam.',
+    description: 'Logodesign für das Café Cupcake Fee. Die Kundin wünschte sich eine Fee, die einen Cupcake hält, und stellte dazu Inspirationsbeispiele zur Verfügung (siehe letztes Bild). Auf dieser Basis entwickelte ich ein individuelles Logo, das die verspielte und süße Markenidentität widerspiegelt.',
     technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/cupcakefee.speyer/',
     linkLabel: 'Auf Instagram ansehen'
@@ -137,7 +142,7 @@ export const PROJECTS: Project[] = [
       'images/project-8/result-screen.png',
       'images/project-8/credit-scene.png'
     ],
-    description: 'Im Januar 2026 nahm ich gemeinsam mit fünf Freunden an der Game Jam in Karlsruhe teil. In kurzer Zeit entstand ein vollständiges kleines Spiel – mein Beitrag lag im visuellen Design: Ich gestaltete Spielgegenstände, Charaktere und Fahrzeuge sowie alle Bildschirmmasken wie Startscreen, Ergebnisanzeige und Creditscene.',
+    description: 'Im Januar 2026 nahm ich gemeinsam mit fünf Freunden an der Global Game Jam in Karlsruhe teil. In kurzer Zeit entwickelten wir gemeinsam ein kleines Game. Mein Beitrag lag im visuellen Design: Ich gestaltete Spielgegenstände, Charaktere und Fahrzeuge sowie alle UI-Elemente wie Startscreen, Ergebnisanzeige und Creditscene.',
     technologies: ['Adobe Illustrator'],
     link: 'https://globalgamejam.org/games/2026/note-road-1',
     linkLabel: 'Spiel ansehen'
@@ -150,9 +155,10 @@ export const PROJECTS: Project[] = [
     images: [
       'images/project-9/Spielumgebung.png',
       'images/project-9/Startscreen.png',
-      'images/project-9/ingame-screenshot.png'
+      'images/project-9/ingame-screenshot.png',
+      'images/project-9/skizzenbuch.jpeg'
     ],
-    description: 'Squire Quest ist ein 3D-Unity-Spiel, das im Rahmen meines X-Reality Moduls an der IU entstand. Das Spiel wurde konzipiert als spielerische Lösung für das Onboarding von Auszubildenden.',
+    description: 'Squire Quest ist ein 3D-Unity-Spiel, das im Rahmen meines X-Reality Moduls an der IU entstanden ist und als spielerischer Ansatz für das Onboarding von Auszubildenden konzipiert wurde. Der Entwicklungsprozess umfasste die komplette Pipeline: von der ersten Idee und Skizzen über den Aufbau der Spielwelt bis hin zu technischen Umsetzung. Dabei habe ich mich in Unity und C# eingearbeitet und verschiedene Tools, Assets und Plugins genutzt. Das Spiel kann über die Plattform "itch.io" gespielt werden.',
     technologies: ['Unity', 'Canva', 'Adobe Illustrator', 'Mixamo'],
     link: 'https://xbutterbirne.itch.io/squire-quest',
     linkLabel: 'Spiel spielen'

@@ -10,6 +10,7 @@ import { TextWindowComponent } from '../text-window/text-window.component';
 import { ProjectWindowComponent } from '../project-window/project-window.component';
 import { HomeWindowComponent } from '../home-window/home-window.component';
 import { AboutWindowComponent } from '../about-window/about-window.component';
+import { MinesweeperWindowComponent } from '../minesweeper-window/minesweeper-window.component';
 
 @Component({
   selector: 'app-window',
@@ -20,7 +21,8 @@ import { AboutWindowComponent } from '../about-window/about-window.component';
     TextWindowComponent,
     ProjectWindowComponent,
     HomeWindowComponent,
-    AboutWindowComponent
+    AboutWindowComponent,
+    MinesweeperWindowComponent
   ],
   templateUrl: './window.component.html',
   styleUrl: './window.component.scss'

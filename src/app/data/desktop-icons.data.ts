@@ -5,7 +5,7 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
   {
     id: 'home',
     label: 'Home',
-    iconImg: '/icons/computer.png',
+    iconImg: 'icons/computer.png',
     type: 'home' as const,
     data: {}
   },
@@ -78,7 +78,7 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
   {
     id: 'about',
     label: 'Über mich',
-    iconImg: 'icons/directory_closed.png',
+    iconImg: 'icons/about-me.png',
     type: 'about',
     data: {}
   },
@@ -141,5 +141,13 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
         }
       ]
     }
+  },
+  {
+    id: 'minesweeper',
+    label: 'Minesweeper',
+    icon: '',
+    iconImg: 'icons/minesweeper.png',
+    type: 'minesweeper' as const,
+    data: {}
   }
 ];
