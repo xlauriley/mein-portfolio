@@ -1,4 +1,4 @@
-* {cursor: url('/cursor/normal.png'), auto;}
+* {cursor: url('cursor/normal.png'), auto;}
 
 a, button, [role="button"],
 .folder-window__item,
@@ -6,5 +6,5 @@ a, button, [role="button"],
 .taskbar__item,
 .taskbar__start-btn,
 .start-menu__item {
-  cursor: url('/cursor/pointer.png'), pointer;
+  cursor: url('cursor/pointer.png'), pointer;
 }
