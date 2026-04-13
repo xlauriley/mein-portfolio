@@ -1,0 +1,14 @@
+.minesweeper-window {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--win-gray);
+  padding: 8px;
+
+  ::ng-deep .minesweeper-game {
+    background: var(--win-gray) !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
