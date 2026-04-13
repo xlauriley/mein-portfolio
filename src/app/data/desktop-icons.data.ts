@@ -115,7 +115,7 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
     iconImg: 'icons/txt.png',
     type: 'text',
     data: {
-      content: `Credits\n═══════════════════\n\n🖥️  folgt........`
+      content: `Credits\n═══════════════════\n\n🖥️`
     }
   },
   {

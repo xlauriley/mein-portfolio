@@ -5,25 +5,25 @@
     <menu role="tablist">
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'Ich'"
+        [attr.aria-selected]="activeTab === 'ich'"
         (click)="setTab('ich')">
         <a>Hi, ich bin Laura</a>
       </li>
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'Skills'"
+        [attr.aria-selected]="activeTab === 'skills'"
         (click)="setTab('skills')">
         <a>Skills</a>
       </li>
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'Kreativitaet'"
+        [attr.aria-selected]="activeTab === 'kreativitaet'"
         (click)="setTab('kreativitaet')">
         <a>Kreativität</a>
       </li>
       <li
         role="tab"
-        [attr.aria-selected]="activeTab === 'Musik'"
+        [attr.aria-selected]="activeTab === 'musik'"
         (click)="setTab('musik')">
         <a>Musik</a>
       </li>
@@ -47,7 +47,7 @@
             <div class="about-window__properties">
               <div class="about-window__properties-header">
                 <img src="icons/computer.png" alt="Profil" class="about-window__properties-icon"/>
-                <span>Eigenschaften: Laura</span>
+                <span>Eigenschaften:</span>
               </div>
               <table class="about-window__table">
                 <tbody>
@@ -72,27 +72,18 @@
 
           <div class="about-window__text">
             <p>
-              Ich bin Laura, 26 Jahre alt und lebe in der Nähe von Mannheim.
-              Seit Januar habe ich meinen Bachelor in Medieninformatik in der
-              Tasche und stehe jetzt am Anfang eines neuen Kapitels.
+              Ich bin Laura, 26 Jahre alt und lebe in der schönen Pfalz. Im Januar habe ich meinen Bachelor in
+              Medieninformatik abgeschlossen. Seitdem stehe ich an einem spannenden Punkt: dem Start in ein neues Kapitel
+              und mitten in meiner Bewerbungsphase.
             </p>
-            <p>
-              Was mich antreibt? Der Wunsch, Dinge zu erschaffen die sich gut
-              anfühlen – visuell, emotional und im Miteinander. Ich lebe gerne
-              in Harmonie, umgebe mich mit positiver Energie und schätze
-              Menschen die authentisch sind. Meine engsten Freundinnen –
-              wir nennen uns liebevoll die "Fairys" – sind ein großer Teil davon.
+            <p>Aktuell bin ich auf der Suche nach einem Job, in dem Kreativität nicht nur "nice to have" ist.
+              Ein Ort, an dem ich gestalten, ausprobieren und mich weiterentwickeln kann -
+              am liebsten in einem Team, das sich gegenseitig unterstützt und inspiriert. Was mich dabei antreibt, ist
+              der Wunsch, Dinge zu erschaffen, die sich gut anfühlen. Nicht nur optisch, sondern auch im Gesamtbild.
             </p>
-            <p>
-              Ich bin eine Katzenperson durch und durch, war fast zehn Jahre
-              lang stolze Kaninchenmama (beide aus dem Tierheim ♥) und finde
-              in der Natur – besonders im Frühling – immer wieder meinen
-              Ausgleich.
-            </p>
-            <p>
-              Beruflich suche ich nach einem Ort wo Kreativität kein Bonus
-              ist, sondern zum Alltag gehört. Am liebsten in einem Team
-              das zusammenhält.
+            <p>Wenn ich nicht gerade an neuen Ideen tüftle, bin ich meistens irgendwo zwischen kreativ sein, tanzen, zocken
+              oder mit Freundinnen unterwegs. Zudem habe ich ein großes Herz für Tiere und war fast 10 Jahre lang
+              stolze Kaninchenmama. Und bei der Frage, ob Katzen- oder Hundemensch, sage ich ganz klar: Katzen!.
             </p>
           </div>
 
@@ -102,7 +93,7 @@
         <div *ngIf="isTab('skills')" class="about-window__tab">
 
           <p class="about-window__skills-intro">
-            Hier ist eine schnelle Übersicht über Kenntnisse die ich besitze und mir aktuell aneigne.
+            Hier ist eine schnelle Übersicht über Kenntnisse die ich besitze oder mir aktuell aneigne.
           </p>
 
           <div class="about-window__skills-section">
@@ -123,7 +114,7 @@
             <p class="about-window__skills-title">Entwicklung</p>
             <div class="about-window__skills-list">
               <span class="about-window__skill-chip">Angular</span>
-              <span class="about-window__skill-chip">Angular Material</span>
+              <span class="about-window__skill-chip">Material Design</span>
               <span class="about-window__skill-chip">CSS / SCSS</span>
               <span class="about-window__skill-chip">HTML</span>
               <span class="about-window__skill-chip">JavaScript</span>
@@ -156,36 +147,25 @@
           <div class="about-window__kreativ-grid">
             <div class="about-window__kreativ-item">
               <span class="about-window__kreativ-icon">🧶</span>
-              <span class="about-window__kreativ-label">Häkeln & DIY</span>
+              <span class="about-window__kreativ-label">Häkeln</span>
+            </div>
+            <div class="about-window__kreativ-item">
+              <span class="about-window__kreativ-icon">🧶</span>
+              <span class="about-window__kreativ-label">DIYs</span>
             </div>
             <div class="about-window__kreativ-item">
               <span class="about-window__kreativ-icon">🎨</span>
               <span class="about-window__kreativ-label">Malen & Zeichnen</span>
             </div>
             <div class="about-window__kreativ-item">
-              <span class="about-window__kreativ-icon">🪆</span>
-              <span class="about-window__kreativ-label">Clay Modellieren</span>
-            </div>
-            <div class="about-window__kreativ-item">
-              <span class="about-window__kreativ-icon">💄</span>
-              <span class="about-window__kreativ-label">Schminken & Styling</span>
-            </div>
-            <div class="about-window__kreativ-item">
               <span class="about-window__kreativ-icon">📸</span>
               <span class="about-window__kreativ-label">Fotoshooting & Videos</span>
             </div>
             <div class="about-window__kreativ-item">
-              <span class="about-window__kreativ-icon">💃</span>
-              <span class="about-window__kreativ-label">Tanzen & Singen</span>
+              <span class="about-window__kreativ-icon">📸</span>
+              <span class="about-window__kreativ-label">Modellieren</span>
             </div>
-            <div class="about-window__kreativ-item">
-              <span class="about-window__kreativ-icon">🏃‍♀️</span>
-              <span class="about-window__kreativ-label">Joggen & Dehnen</span>
-            </div>
-            <div class="about-window__kreativ-item">
-              <span class="about-window__kreativ-icon">🌿</span>
-              <span class="about-window__kreativ-label">Natur & Frühling</span>
-            </div>
+
           </div>
         </div>
 
@@ -254,7 +234,6 @@
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
             </iframe>
           </div>
-
         </div>
 
         <!-- ── Tab 5: Lebenslauf ──────────────────────── -->

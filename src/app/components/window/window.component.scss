@@ -19,7 +19,7 @@
 
 .title-bar {
   flex-shrink: 0;
-  cursor: pointer;
+  cursor: url("/cursor/pointer.png"), pointer !important;
 }
 
 .win-titlebar-icon {

@@ -1,5 +1,4 @@
 .minesweeper-window {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,5 +9,9 @@
     background: var(--win-gray) !important;
     border: none !important;
     box-shadow: none !important;
+
+    ._1oSOLOfTYu8K8yu5EBtXE2 {
+      display: none;
+    }
   }
 }

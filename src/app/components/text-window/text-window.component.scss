@@ -17,7 +17,7 @@
 .text-window__header {
   padding: 0.8rem 0.8rem 0.4rem;
   font-family: 'Courier New', monospace;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: black;
   background: white;
   white-space: pre;
@@ -38,7 +38,7 @@
   text-decoration: none;
   color: black;
   font-family: 'Courier New', monospace;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   cursor: pointer;
   border: 2px dotted var(--win-gray-light);
 }
@@ -64,7 +64,7 @@
   height: calc(100% - 8px);
   padding: 0.8rem;
   font-family: 'Courier New', monospace;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   white-space: pre-wrap;
   color: black;
   background: white;

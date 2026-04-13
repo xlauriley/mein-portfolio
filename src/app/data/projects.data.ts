@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
       'images/project-1/Skizze.png',
       'images/project-1/wireframes.png'
     ],
-    description: 'Im Rahmen meiner Bachelorarbeit untersuchte ich, welchen Einfluss visuelle Gestaltungselemente – insbesondere Farben, Formen und Animationen – auf Vertrauen, Nutzererfahrung und Buchungsbereitschaft auf Tiersitter-Plattformen haben. Auf Basis einer Fokusgruppe und ausführlicher Theorierecherche entwickelte ich ein vollständiges Konzept für Desktop und Smartphone: von ersten Skizzen über Wireframes (siehe letzte Bilder) bis hin zu einem High-Fidelity Prototyp. Der finale Prototyp wurde anschließend in Usability-Tests evaluiert. Nach meinem Bachelorabschluss habe ich das Konzept mit dem Framework Angular technisch umgesetzt.',
+    description: 'Im Rahmen meiner Bachelorarbeit untersuchte ich, welchen Einfluss visuelle Gestaltungselemente – insbesondere Farben, Formen und Animationen – auf Vertrauen, Nutzererfahrung und Buchungsbereitschaft auf Tiersitter-Plattformen haben. Auf Basis einer Fokusgruppe und ausführlicher Theorierecherche entwickelte ich ein vollständiges Konzept für Desktop und Smartphone: von ersten Skizzen über Wireframes bis hin zu einem High-Fidelity Prototyp. Der finale Prototyp wurde anschließend in Usability-Tests evaluiert. Nach meinem Bachelorabschluss habe ich das Konzept mit dem Framework Angular technisch umgesetzt.',
     technologies: ['Adobe Illustrator', 'Adobe XD', 'Angular', 'Balsamiq'],
     link: 'https://github.com/xlauriley/fabis-katzensitterservice',
     linkLabel: 'Code auschecken'
@@ -46,7 +46,7 @@ export const PROJECTS: Project[] = [
       'images/project-3/Kontakt.png',
       'images/project-3/Karriere.png'
     ],
-    description: 'Relaunch der Unternehmenswebseite mit Fokus auf einen moderneren Look und eine klare Struktur. Ziel des Projekts war es, die Inhalte übersichtlicher aufzubereiten und die Nutzerführung zu verbessern. Dabei entstand ein neues Design, das die wichtigsten Informationen schnell zugänglich macht und insgesamt zeitgemäßer wirkt.',
+    description: 'Relaunch der Webseite von Dienstleistungen Tuttelberg mit Fokus auf einen moderneren Look und eine klare Struktur. Ziel des Projekts war es, die Inhalte übersichtlicher aufzubereiten und die Nutzerführung zu verbessern. Dabei entstand ein neues Design, das die wichtigsten Informationen schnell zugänglich macht und insgesamt zeitgemäßer wirkt.',
     technologies: ['Jimdo'],
     link: 'https://www.dienstleistungen-tuttelberg.de/',
     linkLabel: 'Website besuchen'
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
       'images/project-4/wireframe.png',
       'images/project-4/webseiteVorher.JPG'
     ],
-    description: 'Dieses Projekt entstand im Rahmen des Studienmoduls "User Interface Design Projekt", in dem die Aufgabe darin bestand, eine bestehende Webseite hinsichtlich ihrer Benutzerfreundlichkeit zu optimieren. So schnappte ich mir die veraltete Webseite meines Onkels (siehe letztes Bild) und entwickelte ein neues Designkonzept. Nach Abschluss des Moduls setzte ich die Webseite mit HTML, CSS und Javascript um. Diese Seite war meine erste vollständig selbst gestaltete und programmierte Webseite.',
+    description: 'Dieses Projekt entstand im Rahmen des Studienmoduls "User Interface Design Projekt", in dem die Aufgabe darin bestand, eine bestehende Webseite hinsichtlich ihrer Benutzerfreundlichkeit zu optimieren. So schnappte ich mir die veraltete Webseite meines Onkels und entwickelte ein neues Designkonzept. Nach Abschluss des Moduls setzte ich die Webseite mit HTML, CSS und Javascript um. Diese Seite war meine erste vollständig selbst gestaltete und programmierte Webseite.',
     technologies: ['Adobe XD', 'Balsamiq', 'HTML', 'CSS', 'JavaScript'],
     link: 'https://github.com/xlauriley/elektro-bleh',
     linkLabel: 'Code auschecken'
@@ -79,8 +79,7 @@ export const PROJECTS: Project[] = [
       'images/project-5/logo-final.png',
       'images/project-5/heckscheibe.jpeg'
     ],
-    description: "Logoentwicklung für Fabi's kleiner Katzensitter-Service. Da der Name bewusst sich an 'Kiki's kleiner Lieferservice' anlehnt, war der Wunsch der Kundin ebenfalls das Logo entsprechend anzupassen. So entstand eine kleine Hexe, die auf einem Besen fliegt und von ihren Katzen begleitet wird. Das Logo wurde für verschiedene Einsatzbereiche erstellt, darunter Webseite, Instagram und HEckscheibe des Autos.",
-    technologies: ['Adobe Illustrator'],
+    description: "Logoentwicklung für Fabi's kleinen Katzensitter-Service. Da der Name bewusst an 'Kiki's kleiner Lieferservice' angelehnt ist, war auch der Kundenwunsch, diese Stimmung im Logo aufzugreifen. So entstand eine kleine Hexe, die auf ihrem Besen fliegt und von ihren Katzen begleitet wird. Das Logo wurde für verschiedene Einsatzbereiche gestaltet, darunter Website, Instagram und als Grafik für die Heckscheibe des Autos.",    technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/fabiskatzensitten',
     linkLabel: 'Auf Instagram ansehen'
   },
@@ -95,7 +94,7 @@ export const PROJECTS: Project[] = [
       'images/project-6/visitenkarte-back.jpeg',
       'images/project-6/inspo.jpeg'
     ],
-    description: 'Logodesign für das Café Cupcake Fee. Die Kundin wünschte sich eine Fee, die einen Cupcake hält, und stellte dazu Inspirationsbeispiele zur Verfügung (siehe letztes Bild). Auf dieser Basis entwickelte ich ein individuelles Logo, das die verspielte und süße Markenidentität widerspiegelt.',
+    description: 'Logodesign für das Café "Cupcake Fee". Die Kundin wünschte sich eine Fee, die einen Cupcake hält, und stellte dazu passende Inspirationsbilder zur Verfügung (siehe letztes Bild). Auf dieser Grundlage entwickelte ich ein individuelles Logo, das die verspielte und süße Markenidentität des Cafés widerspiegelt.',
     technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/cupcakefee.speyer/',
     linkLabel: 'Auf Instagram ansehen'
@@ -110,7 +109,7 @@ export const PROJECTS: Project[] = [
       'images/project-7/SNS-23-Flyer-front.png',
       'images/project-7/SNS-23-Flyer-back.png'
     ],
-    description: 'Plakat- und Flyerdesign für das Event "Spray n Skate" in Schifferstadt – in zwei aufeinanderfolgenden Jahren. Die Gestaltung sollte die Energie und Ästhetik der Szene einfangen und gleichzeitig alle wichtigen Infos klar kommunizieren.',
+    description: 'Plakat- und Flyerdesign für das Event "Spray n Skate" in Schifferstadt, umgesetzt in zwei aufeinanderfolgenden Jahren. Ziel war es, die Energie der Skate- und Graffiti-Szene visuell einzufangen und gleichzeitig alle wichtigen Informationen klar zu kommunizieren.',
     technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/arts.of.bass/',
     linkLabel: 'Auf Instagram ansehen'
@@ -125,7 +124,7 @@ export const PROJECTS: Project[] = [
       'images/project-7/SNS24-Flyer-front.jpg',
       'images/project-7/SNS24-Flyer-back.jpg'
     ],
-    description: 'Plakat- und Flyerdesign für das Event "Spray n Skate" in Schifferstadt – in zwei aufeinanderfolgenden Jahren. Die Gestaltung sollte die Energie und Ästhetik der Szene einfangen und gleichzeitig alle wichtigen Infos klar kommunizieren.',
+    description: 'Plakat- und Flyerdesign für das Event "Spray n Skate" in Schifferstadt, umgesetzt in zwei aufeinanderfolgenden Jahren. Ziel war es, die Energie der Skate- und Graffiti-Szene visuell einzufangen und gleichzeitig alle wichtigen Informationen klar zu kommunizieren.',
     technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/arts.of.bass/',
     linkLabel: 'Auf Instagram ansehen'
@@ -140,9 +139,10 @@ export const PROJECTS: Project[] = [
       'images/project-8/track-1.png',
       'images/project-8/track-2.png',
       'images/project-8/result-screen.png',
-      'images/project-8/credit-scene.png'
+      'images/project-8/credit-scene.png',
+      'images/project-8/inAction.jpeg'
     ],
-    description: 'Im Januar 2026 nahm ich gemeinsam mit fünf Freunden an der Global Game Jam in Karlsruhe teil. In kurzer Zeit entwickelten wir gemeinsam ein kleines Game. Mein Beitrag lag im visuellen Design: Ich gestaltete Spielgegenstände, Charaktere und Fahrzeuge sowie alle UI-Elemente wie Startscreen, Ergebnisanzeige und Creditscene.',
+    description: 'Im Januar 2026 nahm ich gemeinsam mit fünf Freunden an der Global Game Jam in Karlsruhe teil. In kurzer Zeit entwickelten wir gemeinsam ein kleines Game namens "Note the Road". Mein Beitrag lag im visuellen Design: Ich gestaltete Spielgegenstände, Charaktere und Fahrzeuge sowie alle UI-Elemente wie Startscreen, Ergebnisanzeige und Creditscene.',
     technologies: ['Adobe Illustrator'],
     link: 'https://globalgamejam.org/games/2026/note-road-1',
     linkLabel: 'Spiel ansehen'

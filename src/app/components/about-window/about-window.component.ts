@@ -26,10 +26,10 @@ export class AboutWindowComponent {
   steckbrief = [
     { label: 'Name',         value: 'Laura Lautenschläger' },
     { label: 'Spitzname',    value: 'Lauri' },
-    { label: 'Wohnort',      value: 'Nähe von Mannheim' },
-    { label: 'Geburtstag',   value: '03.02.2000' },
+    { label: 'Standort',      value: 'Rheinland-Pfalz' },
     { label: 'Sternzeichen', value: 'Wassermann' },
-    { label: 'Lieblingsfarbe', value: 'Lila, Grün & Pink' },
+    { label: 'Lieblingsfarben', value: 'Lila, Grün & Pink' },
+    { label: 'Hobbys', value: 'Kreativ sein, Joggen, Tanzen, Zocken' },
     { label: 'Status',       value: 'Open for Work' }
   ];
 }

@@ -1,6 +1,7 @@
 .home-window {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: var(--win-gray);
   font-family: var(--font-system);
 }
@@ -38,12 +39,12 @@
 }
 
 .home-window__subtitle {
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--color-deeper-pink);
 }
 
 .home-window__description {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: black;
   margin-top: 0.3rem;

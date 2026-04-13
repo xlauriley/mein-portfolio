@@ -17,6 +17,8 @@
   border: 2px inset var(--win-gray-dark);
   margin: 4px;
   background: var(--win-gray);
+
+  overflow: hidden;
 }
 
 .project-window__image-wrapper {
@@ -27,8 +29,7 @@
   justify-content: center;
   background: var(--win-gray);
   margin: 10px;
-  min-height: 500px;
-  max-height: 500px;
+  min-height: 0;
 }
 
 .project-window__image {
@@ -123,7 +124,7 @@
 }
 
 .project-window__description {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: black;
   background: var(--win-gray-light);
@@ -142,6 +143,13 @@
   font-weight: bold;
   color: var(--win-gray-dark);
   letter-spacing: 0.2em;
+}
+
+.project-window__tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 ::ng-deep .mat-mdc-chip {
@@ -170,7 +178,6 @@
   font-size: 0.8rem;
   cursor: pointer;
   width: fit-content;
-  margin-top: auto;
 
   mat-icon {
     font-size: 0.9rem;
