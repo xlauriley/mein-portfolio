@@ -1,16 +1,11 @@
 <div class="text-window">
 
-  <!-- Normale Textdatei -->
   <pre class="text-window__content"
        *ngIf="!isContact && !isCredits">{{ data?.content }}</pre>
 
   <!-- Kontakt -->
   <div class="text-window__notepad" *ngIf="isContact">
-
-    <!-- Überschrift im Notepad-Stil -->
     <div class="text-window__header">{{ data?.header }}</div>
-
-    <!-- Links mit Icon -->
     <div class="text-window__links">
       <a
       *ngFor="let link of contactLinks"
@@ -25,11 +20,21 @@
       <span class="text-window__link-label">{{ link.label }}</span>
       </a>
     </div>
-
   </div>
 
   <!-- Credits -->
-  <pre class="text-window__content"
-       *ngIf="isCredits">{{ data?.content }}</pre>
+  <div class="text-window__notepad" *ngIf="isCredits">
+    <div class="text-window__header">{{ data?.header }}</div>
+    <div class="text-window__links">
+      <a
+        *ngFor="let link of creditsLinks"
+        [href]="link.url"
+        target="_blank"
+        class="text-window__link">
+        <span class="text-window__link-label">{{ link.label }}</span>
+      </a>
+    </div>
+  </div>
+
 
 </div>

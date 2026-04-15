@@ -11,19 +11,11 @@
   gap: 1.5rem;
   padding: 1rem;
   background: white;
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray-mid);
   margin: 4px;
   flex: 1;
 }
 
-/*.home-window__avatar {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border: 2px inset var(--win-gray-dark);
-  flex-shrink: 0;
-  align-self: flex-start;
-}*/
 
 .home-window__text {
   display: flex;

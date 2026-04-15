@@ -18,14 +18,14 @@
 }
 
 .about-window__content {
-  max-height: 600px;
+  max-height: 70vh;
   overflow-y: auto;
+  background-color: var(--win-gray-light);
 }
 
 [role="tab"] {
   cursor: url('/cursor/pointer.png'), pointer !important;
 }
-
 
 .about-window__tab {
   display: flex;
@@ -62,7 +62,6 @@
 }
 
 // ── Steckbrief ────────────────────────────────────────────
-
 .about-window__properties {
   border: 2px inset var(--win-gray-dark);
   background: white;
@@ -90,15 +89,15 @@
   border-collapse: collapse;
 
   tr:nth-child(even) {
-    background: #f5f5f5;
+    background: var(--win-gray-light);
   }
 }
 
 .about-window__table-label {
   padding: 3px 8px;
-  color: #555;
+  color: var(--win-gray-darker);
   font-size: 0.78rem;
-  width: 40%;
+  width: 30%;
   border-right: 1px solid var(--win-gray-mid);
   white-space: nowrap;
 }
@@ -116,22 +115,20 @@
 }
 
 // ── Persönlicher Text ─────────────────────────────────────
-
 .about-window__text {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   font-size: 0.9rem;
   line-height: 1.7;
-  color: #222;
+  color: black;
 }
 
 // ── Skills ────────────────────────────────────────────────
-
 .about-window__skills-intro {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  color: #333;
+  color: black;
   font-style: italic;
 }
 
@@ -167,11 +164,10 @@
 }
 
 // ── Kreativität ───────────────────────────────────────────
-
 .about-window__kreativ-intro {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  color: #333;
+  color: black;
   font-style: italic;
 }
 
@@ -199,15 +195,14 @@
 
 .about-window__kreativ-label {
   font-size: 0.72rem;
-  color: #333;
+  color: black;
 }
 
 // ── Musik ─────────────────────────────────────────────────
-
 .about-window__musik-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.6;
-  color: #333;
+  color: black;
 }
 
 .about-window__spotify {
@@ -232,9 +227,9 @@
 }
 
 .about-window__album-text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.5;
-  color: #333;
+  color: black;
   font-style: italic;
 }
 
@@ -249,7 +244,7 @@
 .about-window__top-songs-title {
   font-size: 0.8rem;
   font-weight: bold;
-  color: #555;
+  color: var(--win-gray-darker);
   margin-bottom: 0.2rem;
 }
 
@@ -287,7 +282,7 @@
 
 .about-window__song-desc {
   font-size: 0.8rem;
-  color: #555;
+  color: var(--win-gray-darker);
   line-height: 1.4;
 }
 

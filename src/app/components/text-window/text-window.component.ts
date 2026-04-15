@@ -7,6 +7,11 @@ interface ContactLink {
   url: string;
 }
 
+interface CreditsLink {
+  label: string;
+  url: string;
+}
+
 @Component({
   selector: 'app-text-window',
   standalone: true,
@@ -21,6 +26,8 @@ export class TextWindowComponent implements OnInit {
   isContact: boolean = false;
   isCredits: boolean = false;
   contactLinks: ContactLink[] = [];
+  creditsLinks: CreditsLink[] = [];
+
 
   ngOnInit(): void {
     this.isContact = this.data?.type === 'contact';
@@ -28,6 +35,10 @@ export class TextWindowComponent implements OnInit {
 
     if (this.isContact) {
       this.contactLinks = this.data?.links || [];
+    }
+
+    if (this.isCredits) {
+      this.creditsLinks = this.data?.links || [];
     }
   }
 }

@@ -1,6 +1,7 @@
 .project-window {
   display: flex;
   height: 95%;
+  max-height: 80vh;
   font-family: var(--font-system);
   font-size: 0.85rem;
   overflow: hidden;
@@ -8,17 +9,17 @@
 }
 
 // ── Linke Spalte ─────────────────────────────────────────
-
 .project-window__left {
   width: 55%;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray-mid);
   margin: 4px;
   background: var(--win-gray);
 
   overflow: hidden;
+  min-height: 0;
 }
 
 .project-window__image-wrapper {
@@ -45,7 +46,7 @@
   justify-content: center;
   gap: 1rem;
   padding: 4px;
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray-mid);
   margin: 4px;
   flex-shrink: 0;
 
@@ -53,11 +54,8 @@
     padding: 1px 8px;
     background: var(--win-gray-mid);
     color: black;
-    border-top: 1px solid var(--win-gray-light);
-    border-left: 1px solid var(--win-gray-light);
-    border-right: 1px solid var(--win-gray-darker);
-    border-bottom: 1px solid var(--win-gray-darker);
-    cursor: pointer;
+    border: 1px solid var(--win-gray-dark);
+    cursor: url("/cursor/pointer.png"), pointer;
     font-size: 0.7rem;
 
     &:disabled {
@@ -67,6 +65,7 @@
 
     &:not(:disabled):hover {
       outline: 1px solid var(--color-deeper-pink);
+      color: var(--color-deeper-pink);
     }
   }
 }
@@ -85,7 +84,7 @@
   background: var(--win-gray);
   overflow-x: auto;
   flex-shrink: 0;
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray-mid);
   margin: 4px;
 
   &::-webkit-scrollbar { height: 4px; }
@@ -110,7 +109,6 @@
 }
 
 // ── Rechte Spalte ─────────────────────────────────────────
-
 .project-window__right {
   flex: 1;
   padding: 0.8rem;
@@ -119,7 +117,7 @@
   flex-direction: column;
   gap: 0.8rem;
   background: var(--win-gray);
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray-mid);
   margin: 4px 4px 4px 0;
 }
 
@@ -129,7 +127,7 @@
   color: black;
   background: var(--win-gray-light);
   padding: 0.5rem;
-  border: 1px inset var(--win-gray-dark);
+  border: 1px solid var(--win-gray-dark);
 }
 
 .project-window__tech-section {
@@ -170,8 +168,8 @@
   background: var(--win-gray-mid);
   border-top: 1px solid var(--win-gray-light);
   border-left: 1px solid var(--win-gray-light);
-  border-right: 2px solid var(--win-gray-darker);
-  border-bottom: 2px solid var(--win-gray-darker);
+  border-right: 1px solid var(--win-gray-darker);
+  border-bottom: 1px solid var(--win-gray-darker);
   color: black;
   text-decoration: none;
   font-family: var(--font-system);

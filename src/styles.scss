@@ -16,7 +16,6 @@
   --win-gray-dark:      #808080;
   --win-gray-darker:    #404040;
 
-  --font-body: "DotGothic16";
   --font-system: "DotGothic16";
 }
 
@@ -24,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--font-system);
 }
 
 body {

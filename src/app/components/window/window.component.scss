@@ -2,8 +2,6 @@
   position: fixed !important;
   display: flex;
   flex-direction: column;
-  min-width: 200px;
-  min-height: 150px;
 
   &.minimized {
     display: none;
@@ -20,6 +18,10 @@
 .title-bar {
   flex-shrink: 0;
   cursor: url("/cursor/pointer.png"), pointer !important;
+
+  .title-bar-text {
+    font-weight: lighter;
+  }
 }
 
 .win-titlebar-icon {
@@ -34,9 +36,10 @@
 .win-menubar {
   display: flex;
   background: var(--win-gray-mid);
-  border-top: none;
   padding: 1px 2px;
   flex-shrink: 0;
+  border: 1px solid var(--win-gray-dark);
+  border-top: none;
 
   span {
     padding: 2px 8px;
@@ -51,4 +54,3 @@
     }
   }
 }
-

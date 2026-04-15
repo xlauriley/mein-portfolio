@@ -11,6 +11,7 @@ import { ProjectWindowComponent } from '../project-window/project-window.compone
 import { HomeWindowComponent } from '../home-window/home-window.component';
 import { AboutWindowComponent } from '../about-window/about-window.component';
 import { MinesweeperWindowComponent } from '../minesweeper-window/minesweeper-window.component';
+import {PaintWindowComponent} from '../paint-window/paint-window.component';
 
 @Component({
   selector: 'app-window',
@@ -22,7 +23,8 @@ import { MinesweeperWindowComponent } from '../minesweeper-window/minesweeper-wi
     ProjectWindowComponent,
     HomeWindowComponent,
     AboutWindowComponent,
-    MinesweeperWindowComponent
+    MinesweeperWindowComponent,
+    PaintWindowComponent
   ],
   templateUrl: './window.component.html',
   styleUrl: './window.component.scss'
@@ -42,7 +44,6 @@ export class WindowComponent implements OnInit {
   ngOnInit(): void {}
 
   // ── Fenster-Aktionen ────────────────────────────────────
-
   onFocus(): void {
     this.windowService.focusWindow(this.window.id);
   }
@@ -63,7 +64,6 @@ export class WindowComponent implements OnInit {
   }
 
   // ── Drag & Drop ─────────────────────────────────────────
-
   onTitlebarMousedown(event: MouseEvent): void {
 
     if (event.button !== 0) return;
@@ -84,7 +84,6 @@ export class WindowComponent implements OnInit {
     const x = event.clientX - this.dragOffsetX;
     const y = event.clientY - this.dragOffsetY;
 
-    // Fenster nicht über den Bildschirmrand hinaus ziehen
     const maxX = globalThis.innerWidth - 200;
     const maxY = globalThis.innerHeight - 40;
 

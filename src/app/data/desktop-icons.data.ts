@@ -115,8 +115,67 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
     iconImg: 'icons/txt.png',
     type: 'text',
     data: {
-      content: `Credits\n═══════════════════\n\n🖥️`
+      type: 'credits',
+      header: `Credits\n═══════════════════\n\n`,
+      links: [
+        {
+          label: 'Asset: 98.css',
+          url: 'https://jdan.github.io/98.css'
+        },
+        {
+          label: 'Asset: Frutiger Aero Archive',
+          url: 'https://frutigeraeroarchive.org/'
+        },
+        {
+          label: 'Asset: minesweeper',
+          url: 'https://github.com/minesweeper/minesweeper.github.io'
+        },
+        {
+          label: 'Asset: jspaint',
+          url: 'https://github.com/1j01/jspaint'
+        },
+        {
+          label: 'Asset: Cursor Set',
+          url: 'https://www.rw-designer.com/cursor-set/plittlestar-mimidestin0h'
+        },
+        {
+          label: 'Inspo: lostlove.neocities.org',
+          url: 'https://lostlove.neocities.org/'
+        },
+        {
+          label: 'Inspo: nenrikido.neocities.org',
+          url: 'https://nenrikido.neocities.org/'
+        },
+        {
+          label: 'Unbedingt anschauen: blamensir.neocities.org',
+          url: 'https://blamensir.neocities.org/'
+        },
+        {
+          label: 'Unbedingt anschauen: espy.world',
+          url: 'https://espy.world/'
+        },
+        {
+          label: 'Unbedingt anschauen: irony-machine.neocities.org',
+          url: 'https://irony-machine.neocities.org/'
+        },
+      ]
     }
+  },
+  {
+    id: 'minesweeper',
+    label: 'Minesweeper',
+    icon: '',
+    iconImg: 'icons/minesweeper.png',
+    type: 'minesweeper',
+    data: {},
+  },
+  {
+    id: 'paint',
+    label: 'Paint',
+    icon: '',
+    iconImg: 'icons/paint-icon.png',
+    type: 'paint',
+    data: {},
   },
   {
     id: 'trash',
@@ -127,27 +186,24 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
       isTrash: true,
       children: [
         {
-          id: 'old-home', label: 'Home-Wireframe.png',
-          iconImg: 'icons/directoy_closed.png',
+          id: 'old-home', label: 'Alter Entwurf',
+          iconImg: 'icons/old-portfolio.png',
           type: 'project' as const,
           data: {
             id: 'old-entry',
-            title: 'Alter Entwurf – Home',
+            title: 'Alter Entwurf',
             category: 'web',
-            images: ['images/old-portfolio/Home.png'],
-            description: 'Der ursprüngliche Home-Screen meines ersten Portfolio-Entwurfs.',
-            technologies: ['Figma'],
+            images: ['images/old-portfolio/wireframe.png',
+              'images/old-portfolio/screenshot-entry.png',
+              'images/old-portfolio/screenshot-home.png',
+              'images/old-portfolio/screenshot-details.png',
+              'images/old-portfolio/screenshot-homeNEW.png'
+            ],
+          description: 'Dieser Entwurf zeigt die erste Designrichtung meines Portfolios. Ausgangspunkt war die Idee eines großen Sterns als Entry-Point, von dem aus man zur Startseite gelangt. Die Projekte sind dort als Grid angeordnet und führen per Klick zur jeweiligen Detailansicht. Nach einer ersten Feedbackrunde wurde jedoch deutlich, dass das Design insgesamt zu verspielt wirkte. Ich habe daraufhin noch Anpassungen vorgenommen, trotzdem fühlte sich das Konzept für mich nicht mehr richtig an. Weshalb ich mich entschieden habe, die Richtung komplett neu zu denken. Dieser Entwurf stellt damit einen wichtigen Zwischenschritt in meinem Entwicklungsprozess dar.',
+            technologies: ['Figma', 'Angular', 'HTML', 'CSS', 'Typescript'],
           }
         }
       ]
     }
-  },
-  {
-    id: 'minesweeper',
-    label: 'Minesweeper',
-    icon: '',
-    iconImg: 'icons/minesweeper.png',
-    type: 'minesweeper' as const,
-    data: {}
   }
 ];

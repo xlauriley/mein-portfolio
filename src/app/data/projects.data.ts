@@ -3,7 +3,7 @@ import { Project } from '../models/project.model';
 export const PROJECTS: Project[] = [
   {
     id: '01',
-    title: "Meine Bachelor-arbeit",
+    title: "Meine Bachelorarbeit",
     category: 'web',
     icon: 'icons/website-icon.png',
     images: [

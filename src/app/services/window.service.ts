@@ -4,14 +4,11 @@ import { WindowInstance } from '../models/window.model';
 @Injectable({ providedIn: 'root' })
 export class WindowService {
 
-  // signal() ist die moderne Angular-Art für reaktiven State
-  // alle Komponenten die windows() lesen, updaten automatisch
   windows = signal<WindowInstance[]>([]);
 
   private maxZIndex = 100;
 
   openWindow(config: Omit<WindowInstance, 'isOpen' | 'isMinimized' | 'isMaximized' | 'zIndex' | 'isFocused'>): void {
-    // alle anderen Fenster deaktivieren
     this.windows.update(wins => wins.map(w => ({ ...w, isFocused: false })));
 
     const existing = this.windows().find(w => w.id === config.id);
@@ -61,7 +58,6 @@ export class WindowService {
     ));
   }
 
-  // Gibt alle offenen (nicht minimierten) Fenster zurück
   getOpenWindows(): WindowInstance[] {
     return this.windows().filter(w => w.isOpen);
   }

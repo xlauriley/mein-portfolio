@@ -9,6 +9,6 @@ export interface WindowInstance {
   zIndex: number;
   position: { x: number; y: number };
   size: { width: number; height: number };
-  type: 'folder' | 'text' | 'project' | 'home' | 'about' | 'minesweeper';
+  type: 'folder' | 'text' | 'project' | 'home' | 'about' | 'minesweeper' | 'paint';
   data?: any;
 }

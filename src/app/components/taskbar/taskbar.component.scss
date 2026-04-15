@@ -12,7 +12,6 @@
   right: 0;
   height: 40px;
   background: var(--win-gray-mid);
-  // Klassischer Windows raised Border
   border-top: 2px solid var(--win-gray-light);
   border-left: 2px solid var(--win-gray-light);
   display: flex;
@@ -36,7 +35,7 @@
   padding: 3px 10px;
   height: 30px;
   background: var(--win-gray-mid);
-  border: 1px inset var(--win-gray-dark);
+  border: 1px inset var(--win-gray-mid);
   margin: 2px;
   cursor: pointer;
   flex-shrink: 0;
@@ -48,11 +47,10 @@
 
   &.active,
   &:active {
-    // Gedrückt: Border invertieren
-    border-top: 2px solid var(--win-gray-darker);
-    border-left: 2px solid var(--win-gray-darker);
-    border-right: 2px solid var(--win-gray-light);
-    border-bottom: 2px solid var(--win-gray-light);
+    border-top: 1px solid var(--win-gray-darker);
+    border-left: 1px solid var(--win-gray-darker);
+    border-right: 1px solid var(--win-gray-light);
+    border-bottom: 1px solid var(--win-gray-light);
   }
 }
 
@@ -86,7 +84,7 @@
   min-width: 120px;
   max-width: 180px;
   background: var(--win-gray-mid);
-  border: 1px inset var(--win-gray-dark);
+  border: 1px inset var(--win-gray-mid);
   margin: 2px;
   cursor: pointer;
   font-family: var(--font-system);
@@ -141,6 +139,6 @@
 .taskbar__date {
   font-family: var(--font-system);
   font-size: 0.65rem;
-  color: #333;
+  color: black;
   line-height: 1.2;
 }

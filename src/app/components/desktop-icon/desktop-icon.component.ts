@@ -20,8 +20,6 @@ export class DesktopIconComponent {
   onClick(): void {
     this.isSelected = true;
 
-    // Einfacher Klick → nur auswählen
-    // Doppelklick wird durch zweiten Klick innerhalb 300ms erkannt
     if (this.clickTimeout) {
       clearTimeout(this.clickTimeout);
       this.clickTimeout = null;

@@ -2,25 +2,22 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  background: #d4d0c8;
-  font-family: var(--font-system);
+  background: var(--win-gray);
   font-size: 0.8rem;
 }
 
 // ── Adressleiste ─────────────────────────────────────────
-
 .folder-window__addressbar {
   display: flex;
   align-items: center;
   gap: 2px;
   padding: 3px 4px;
-  background: #c0c0c0;
-  border: 1px solid #a0a0a0;
+  background: var(--win-gray-mid);
+  border: 1px solid var(--win-gray-dark);
   border-top: none;
   flex-shrink: 0;
 }
 
-// Punkt 1.1: Schmalere Buttons
 .folder-window__nav-btn {
   width: 20px;
   height: 20px;
@@ -64,7 +61,6 @@
 }
 
 // ── Inhalt ───────────────────────────────────────────────
-
 .folder-window__content {
   flex: 1;
   display: flex;
@@ -73,18 +69,10 @@
   gap: 0.5rem;
   padding: 0.5rem;
   overflow-y: auto;
-  border: 2px inset #a0a0a0;
+  border: 2px inset var(--win-gray-mid);
   margin: 4px;
   background: white;
   min-height: 250px;
-}
-
-.folder-window__empty {
-  width: 100%;
-  text-align: center;
-  color: #888;
-  padding: 2rem;
-  font-size: 0.8rem;
 }
 
 .folder-window__item {
