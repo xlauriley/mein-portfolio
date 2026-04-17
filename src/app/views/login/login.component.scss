@@ -8,29 +8,16 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
   &.is-leaving {
     animation: fadeOut 0.8s ease forwards;
   }
 }
 
-.login-screen__bubbles {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: 0;
-  pointer-events: none;
-}
-
 .login-screen__header {
   position: relative;
   z-index: 1;
-}
-
-.login-screen__header {
   background: var(--color-pink);
   display: flex;
   align-items: center;
@@ -85,7 +72,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1rem 2rem;
-  width: 420px;
+  width: 45vh;
   transition: background 0.15s;
   background: rgba(255,255,255,0.5);
 
@@ -94,13 +81,11 @@
 }
 
 .login-screen__user-avatar {
-  font-size: 3rem;
-  width: 80px;
-  height: 80px;
+  width: 4rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 
   &.admin-avatar, &.guest-avatar{
     background: lightgrey;
@@ -114,38 +99,28 @@
   gap: 0.4rem;
 }
 
-.login-screen__user-name {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: rgba(0,0,0,0.5);
-  font-family: var(--font-system);
-}
-
 .login-screen__user-subtitle {
   font-size: 0.8rem;
   color: rgba(0,0,0,0.5);
 }
 
 .login-screen__user-divider {
-  width: 420px;
-  height: 1px;
+  width: 22rem;
+  height: 3px;
   background: rgba(255,255,255,0.15);
   margin: 0.5rem 0;
 }
 
 .login-screen__user-name {
   font-size: 1.2rem;
-  font-weight: 500;
   color: rgba(0,0,0,0.5);
   font-family: var(--font-system);
-  display: flex;
-  align-items: center;
   gap: 0.4rem;
 }
 
 .login-screen__lock-icon {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   object-fit: contain;
   opacity: 0.6;
 }
@@ -164,35 +139,6 @@
   }
 }
 
-.login-screen__footer {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  flex-shrink: 0;
-  line-height: 0;
-  height: 180px;
-}
-
-.login-screen__footer-img {
-  display: block;
-  object-fit: cover;
-  object-position: top;
-
-  &--back {
-    width: 100%;
-    height: 100%;
-  }
-
-  &--front {
-    position: absolute;
-    bottom: -5%;
-    left: 7%;
-    height: 130%;
-    width: auto;
-    object-fit: contain;
-    object-position: bottom;
-  }
-}
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -227,3 +173,24 @@
 }
 
 
+// ------------- MEDIA QUERIES -------------
+//Smartphone
+@media screen and (max-width: 460px) {
+  .login-screen__header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-screen__header-divider {
+    display: none;
+  }
+
+  .login-screen__user-info {
+    text-align: center;
+  }
+
+  .login-screen__user {
+    flex-direction: column;
+    width: 30vh;
+  }
+}

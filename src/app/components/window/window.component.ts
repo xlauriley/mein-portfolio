@@ -1,7 +1,4 @@
-import {
-  Component, Input, OnInit, ElementRef,
-  ViewChild, HostListener
-} from '@angular/core';
+import {  Component, Input, OnInit, ElementRef, ViewChild, HostListener} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WindowService } from '../../services/window.service';
 import { WindowInstance } from '../../models/window.model';
@@ -44,21 +41,22 @@ export class WindowComponent implements OnInit {
   ngOnInit(): void {}
 
   // ── Fenster-Aktionen ────────────────────────────────────
+
   onFocus(): void {
     this.windowService.focusWindow(this.window.id);
   }
 
-  onMinimize(event: MouseEvent): void {
+  onMinimize(event: Event): void {
     event.stopPropagation();
     this.windowService.minimizeWindow(this.window.id);
   }
 
-  onMaximize(event: MouseEvent): void {
+  onMaximize(event: Event): void {
     event.stopPropagation();
     this.windowService.maximizeWindow(this.window.id);
   }
 
-  onClose(event: MouseEvent): void {
+  onClose(event: Event): void {
     event.stopPropagation();
     this.windowService.closeWindow(this.window.id);
   }
@@ -95,6 +93,42 @@ export class WindowComponent implements OnInit {
 
   @HostListener('document:mouseup')
   onMouseUp(): void {
+    this.isDragging = false;
+  }
+
+  // ---- Touch-Events für Smartphone & Tablet -----
+  onTitlebarTouchStart(event: TouchEvent): void {
+    if (this.window.isMaximized) return;
+
+    const touch = event.touches[0];
+
+    this.isDragging = true;
+    this.dragOffsetX = touch.clientX - this.window.position.x;
+    this.dragOffsetY = touch.clientY - this.window.position.y;
+
+    event.preventDefault();
+  }
+
+  @HostListener('document:touchmove', ['$event'])
+  onTouchMove(event: TouchEvent): void {
+    if (!this.isDragging) return;
+
+    const touch = event.touches[0];
+
+    const x = touch.clientX - this.dragOffsetX;
+    const y = touch.clientY - this.dragOffsetY;
+
+    const maxX = globalThis.innerWidth - 200;
+    const maxY = globalThis.innerHeight - 40;
+
+    this.windowService.updatePosition(this.window.id, {
+      x: Math.max(0, Math.min(x, maxX)),
+      y: Math.max(0, Math.min(y, maxY))
+    });
+  }
+
+  @HostListener('document:touchend')
+  onTouchEnd(): void {
     this.isDragging = false;
   }
 }

@@ -14,29 +14,29 @@
   <div
     class="title-bar"
     [class.inactive]="!window.isFocused"
-    (mousedown)="onTitlebarMousedown($event)">
+    (mousedown)="onTitlebarMousedown($event)" (touchstart)="onTitlebarTouchStart($event)">
 
     <div class="title-bar-text">
       <img
-        *ngIf="window.icon"
+        *ngIf="window.iconImg"
         class="win-titlebar-icon"
-        [src]="window.icon"
+        [src]="window.iconImg"
         [alt]="window.title"/>
       {{ window.title }}
     </div>
 
-    <div class="title-bar-controls">
+    <div class="title-bar-controls" (mousedown)="$event.stopPropagation()" (touchstart)="$event.stopPropagation()">
       <button
         aria-label="Minimize"
-        (mousedown)="onMinimize($event)">
+        (click)="onMinimize($event)">
       </button>
-      <button
+      <button class="max-button"
         aria-label="Maximize"
-        (mousedown)="onMaximize($event)">
+        (click)="onMaximize($event)">
       </button>
       <button
         aria-label="Close"
-        (mousedown)="onClose($event)">
+        (click)="onClose($event)">
       </button>
     </div>
   </div>

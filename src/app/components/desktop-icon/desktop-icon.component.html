@@ -10,11 +10,6 @@
     class="desktop-icon__img"
     [src]="icon.iconImg"
     [alt]="icon.label"/>
-  <span
-    *ngIf="!icon.iconImg"
-    class="desktop-icon__emoji">
-    {{ icon.icon }}
-  </span>
 
   <span class="desktop-icon__label">{{ icon.label }}</span>
 </div>

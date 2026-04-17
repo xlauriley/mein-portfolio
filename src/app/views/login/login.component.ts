@@ -22,7 +22,6 @@ export class LoginComponent {
     }, 800);
   }
 
-  // Punkt 2: Schütteln wenn Admin angeklickt wird
   onAdminClick(): void {
     if (this.adminShaking) return;
     this.adminShaking = true;

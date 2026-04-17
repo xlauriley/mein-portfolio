@@ -164,7 +164,6 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
   {
     id: 'minesweeper',
     label: 'Minesweeper',
-    icon: '',
     iconImg: 'icons/minesweeper.png',
     type: 'minesweeper',
     data: {},
@@ -172,7 +171,6 @@ export const DESKTOP_ICONS: DesktopIcon[] = [
   {
     id: 'paint',
     label: 'Paint',
-    icon: '',
     iconImg: 'icons/paint-icon.png',
     type: 'paint',
     data: {},

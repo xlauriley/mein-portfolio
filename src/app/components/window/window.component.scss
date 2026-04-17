@@ -17,6 +17,7 @@
 
 .title-bar {
   flex-shrink: 0;
+  touch-action: none;
   cursor: url("/cursor/pointer.png"), pointer !important;
 
   .title-bar-text {
@@ -52,5 +53,11 @@
       outline: 1px solid var(--color-deeper-pink);
       color: var(--color-deeper-pink);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .title-bar-controls button {
+    padding: 1rem;
   }
 }

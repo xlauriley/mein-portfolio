@@ -5,8 +5,7 @@ import { WindowService } from '../../services/window.service';
 interface FolderItem {
   id: string;
   label: string;
-  icon: string;
-  iconImg?: string;
+  iconImg: string;
   type: 'folder' | 'text' | 'project';
   data?: any;
 }
@@ -66,7 +65,7 @@ export class FolderWindowComponent implements OnInit {
       this.windowService.openWindow({
         id: item.id,
         title: item.label,
-        icon: item.icon,
+        iconImg: item.iconImg,
         type: 'text',
         data: item.data,
         position: { x: 150 + Math.random() * 100, y: 100 + Math.random() * 80 },
@@ -77,7 +76,7 @@ export class FolderWindowComponent implements OnInit {
       this.windowService.openWindow({
         id: item.id,
         title: item.label,
-        icon: item.icon,
+        iconImg: item.iconImg,
         type: 'project',
         data: item.data,
         position: { x: 150 + Math.random() * 100, y: 100 + Math.random() * 80 },

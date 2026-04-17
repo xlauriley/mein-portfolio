@@ -1,7 +1,8 @@
 .project-window {
   display: flex;
-  height: 95%;
-  max-height: 80vh;
+  flex-direction: row;
+  height: 100%;
+  min-height: 0;
   font-family: var(--font-system);
   font-size: 0.85rem;
   overflow: hidden;
@@ -192,4 +193,24 @@
 @keyframes imageFade {
   from { opacity: 0.5; }
   to   { opacity: 1; }
+}
+
+
+
+// -------------- MEDIA QUERIES ----------------
+@media (max-width: 768px) {
+  .project-window {
+    flex-direction: column;
+  }
+
+  .project-window__left {
+    width: 96vw;
+    height: min(40vh);
+  }
+
+  .project-window__right {
+    max-height: 50vh;
+    overflow-y: scroll;
+    border: 2px solid red;
+  }
 }

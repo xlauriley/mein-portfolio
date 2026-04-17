@@ -27,8 +27,8 @@
 }
 
 .desktop-icon__img {
-  width: 45px;
-  height: 45px;
+  width: 2.5rem;
+  height: 2.5rem;
   object-fit: contain;
   pointer-events: none;
   image-rendering: pixelated;
@@ -43,3 +43,24 @@
   line-height: 1.2;
   pointer-events: none;
 }
+
+
+// ------------- MEDIA QUERIES -------------
+// Smartphone
+@media screen and (max-width: 460px) {
+  .desktop-icon__img {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid green;
+  }
+}
+
+//Tablet
+@media screen and (min-width: 460px) and (max-width: 800px) {
+  .desktop-icon__img {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 2px solid red;
+  }
+}
+

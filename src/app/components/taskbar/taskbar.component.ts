@@ -26,7 +26,6 @@ export class TaskbarComponent implements OnInit {
 
   ngOnInit(): void {
     this.updateClock();
-    // Uhr jede Minute aktualisieren
     this.clockInterval = setInterval(() => {
       this.updateClock();
     }, 1000);

@@ -33,12 +33,11 @@
       (click)="onTaskbarItemClick(win)">
 
       <img
-        *ngIf="win.icon"
+        *ngIf="win.iconImg"
         class="taskbar__item-icon-img"
-        [src]="win.icon"
+        [src]="win.iconImg"
         [alt]="win.title"/>
       <span class="taskbar__item-title">{{ win.title }}</span>
-
     </button>
   </div>
 

@@ -10,34 +10,33 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 2.5rem;
   background: var(--win-gray-mid);
   border-top: 2px solid var(--win-gray-light);
   border-left: 2px solid var(--win-gray-light);
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0.5rem;
   padding: 2px 4px;
   z-index: 1000;
 }
 
 .taskbar__item-icon-img {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   object-fit: contain;
   flex-shrink: 0;
-  image-rendering: pixelated;
 }
 
 .taskbar__start-btn {
   display: flex;
   align-items: center;
   padding: 3px 10px;
-  height: 30px;
+  height: 1.8rem;
   background: var(--win-gray-mid);
   border: 1px inset var(--win-gray-mid);
   margin: 2px;
-  cursor: pointer;
+  cursor: url("/cursor/pointer.png"), pointer;
   flex-shrink: 0;
   justify-content: center;
 
@@ -72,21 +71,20 @@
   display: flex;
   gap: 3px;
   flex: 1;
-  overflow: hidden;
 }
 
 .taskbar__item {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  padding: 2px 8px;
-  height: 28px;
-  min-width: 120px;
-  max-width: 180px;
+  padding: 0.5rem 1rem;
+  height: 1.8rem;
+  min-width: 6rem;
+  max-width: 9rem;
   background: var(--win-gray-mid);
   border: 1px inset var(--win-gray-mid);
-  margin: 2px;
-  cursor: pointer;
+  margin: 0.1rem;
+  cursor: url("/cursor/pointer.png"), pointer;
   font-family: var(--font-system);
   font-size: 0.7rem;
   color: black;
@@ -119,7 +117,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 8px;
-  height: 30px;
+  height: 2rem;
   border-top: 1px solid var(--win-gray-dark);
   border-left: 1px solid var(--win-gray-dark);
   border-right: 1px solid var(--win-gray-light);
@@ -141,4 +139,28 @@
   font-size: 0.65rem;
   color: black;
   line-height: 1.2;
+}
+
+
+// ------------- MEDIA QUERIES -------------
+//SMARTPHONE
+@media screen and (max-width: 460px) {
+  .taskbar__item-title {
+    display: none;
+  }
+
+  .taskbar__item {
+    min-width: 0.1rem;
+    border: 2px solid green;
+    justify-content: center;
+  }
+
+  .taskbar__start-btn {
+    min-width: 0.5rem;
+  }
+
+  .taskbar__windows {
+    overflow: scroll;
+  }
+
 }

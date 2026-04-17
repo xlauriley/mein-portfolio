@@ -24,6 +24,11 @@ export class StartMenuComponent {
     return DESKTOP_ICONS.find(icon => icon.id === id);
   }
 
+  openHome(): void {
+    const icon = this.getIcon('home');
+    if (icon) this.openFromIcon(icon);
+  }
+
   openProjects(): void {
     const icon = this.getIcon('projects');
     if (icon) this.openFromIcon(icon);
@@ -44,15 +49,23 @@ export class StartMenuComponent {
     if (icon) this.openFromIcon(icon);
   }
 
+  openMinesweeper(): void {
+    const icon = this.getIcon('minesweeper');
+    if (icon) this.openFromIcon(icon);
+  }
+
+  openPaint(): void {
+    const icon = this.getIcon('paint');
+    if (icon) this.openFromIcon(icon);
+  }
+
   openTrash(): void {
     const icon = this.getIcon('trash');
     if (icon) this.openFromIcon(icon);
   }
 
   onLogout(): void {
-    // Alle Fenster schließen
     this.windowService.windows.set([]);
-    // Zurück zum Login
     this.authService.logout();
     this.closed.emit();
   }
@@ -61,12 +74,12 @@ export class StartMenuComponent {
     this.windowService.openWindow({
       id: icon.id,
       title: icon.label,
-      icon: icon.icon,
+      iconImg: icon.iconImg,
       type: icon.type,
       data: icon.data,
       position: {
         x: 120 + Math.random() * 150,
-        y: 80 + Math.random() * 100
+        y: 20
       },
       size: {
         width: icon.type === 'text' ? 500 : 700,
