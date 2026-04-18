@@ -312,8 +312,7 @@
 // ----- MEDIA QUERIES --------
 @media (max-width: 768px) {
   .about-window__content {
-    border: 2px solid red !important;
-    max-height: 85vh;
+    max-height: 85dvh;
     overflow-y: scroll;
   }
 
@@ -324,6 +323,5 @@
 
   .about-window__properties {
     max-width: 100%;
-    border: 2px solid green;
   }
 }

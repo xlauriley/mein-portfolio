@@ -74,7 +74,7 @@ body {
 @media (max-width: 768px) {
   .win-window {
     width: 100vw !important;
-    height: 96vh !important;
+    height: 96dvh !important;
     top: 0 !important;
     left: 0 !important;
   }
@@ -89,6 +89,6 @@ body {
   }
 
   .win-window__content {
-    height: 100vh;
+    height: 100dvh;
   }
 }

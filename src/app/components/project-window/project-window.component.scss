@@ -205,12 +205,11 @@
 
   .project-window__left {
     width: 96vw;
-    height: min(40vh);
+    height: min(40dvh);
   }
 
   .project-window__right {
-    max-height: 50vh;
+    max-height: 50dvh;
     overflow-y: scroll;
-    border: 2px solid red;
   }
 }
