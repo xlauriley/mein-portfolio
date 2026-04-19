@@ -96,7 +96,7 @@
   width: 50px;
   height: 40px;
   object-fit: cover;
-  cursor: pointer;
+  cursor: url("/cursor/pointer.png"), pointer;
   opacity: 0.5;
   border: 1px solid transparent;
   flex-shrink: 0;
@@ -209,7 +209,7 @@
   }
 
   .project-window__right {
-    max-height: 45dvh;
+    max-height: 42dvh;
     overflow-y: scroll;
   }
 }
