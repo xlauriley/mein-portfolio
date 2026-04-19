@@ -46,19 +46,19 @@
 
 
 // ------------- MEDIA QUERIES -------------
-// Smartphone
-@media screen and (max-width: 460px) {
+@media (max-width: 768px) {
   .desktop-icon__img {
     width: 1.7rem;
     height: 1.7rem;
   }
-}
 
-//Tablet
-@media screen and (min-width: 460px) and (max-width: 800px) {
-  .desktop-icon__img {
-    width: 2rem;
-    height: 2rem;
+  .desktop-icon {
+    padding: 0;
+    margin: 0;
+  }
+
+  .desktop-icon__label {
+    font-size: 0.8rem;
   }
 }
 

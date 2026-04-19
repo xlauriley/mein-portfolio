@@ -1,6 +1,6 @@
 .desktop {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
   background-size: cover;
@@ -19,3 +19,11 @@
   z-index: 100;
 }
 
+
+// ------------- MEDIA QUERIES -------------
+@media (max-width: 768px) {
+  .desktop__icons {
+    top: 0.7rem;
+    left: 0.7rem;
+  }
+}

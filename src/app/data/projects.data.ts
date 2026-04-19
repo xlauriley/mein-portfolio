@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
       'images/project-1/wireframes.png'
     ],
     description: 'Im Rahmen meiner Bachelorarbeit untersuchte ich, welchen Einfluss visuelle Gestaltungselemente – insbesondere Farben, Formen und Animationen – auf Vertrauen, Nutzererfahrung und Buchungsbereitschaft auf Tiersitter-Plattformen haben. Auf Basis einer Fokusgruppe und ausführlicher Theorierecherche entwickelte ich ein vollständiges Konzept für Desktop und Smartphone: von ersten Skizzen über Wireframes bis hin zu einem High-Fidelity Prototyp. Der finale Prototyp wurde anschließend in Usability-Tests evaluiert. Nach meinem Bachelorabschluss habe ich das Konzept mit dem Framework Angular technisch umgesetzt.',
-    technologies: ['Adobe Illustrator', 'Adobe XD', 'Angular', 'Balsamiq'],
+    technologies: ['Adobe Illustrator', 'Adobe XD', 'Angular', 'Balsamiq', 'CSS', 'HTML', 'Typescript'],
     link: 'https://github.com/xlauriley/fabis-katzensitterservice',
     linkLabel: 'Code auschecken'
   },
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
       'images/project-2/Leistungen.png'
     ],
     description: 'Relaunch der bestehenden Website von Michael Kögel im Zuge eines Hosting-Wechsels. Dabei wurde die Seite von einem Baukastensystem auf eine individuelle Lösung mit reinem HTML, CSS und Javascript umgestellt. Das Design wurde nur an wenigen Stellen behutsam angepasst.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['CSS', 'HTML', 'JavaScript'],
     link: 'https://human-centered-digital-transformation.com/',
     linkLabel: 'Website besuchen'
   },
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
       'images/project-4/webseiteVorher.JPG'
     ],
     description: 'Dieses Projekt entstand im Rahmen des Studienmoduls "User Interface Design Projekt", in dem die Aufgabe darin bestand, eine bestehende Webseite hinsichtlich ihrer Benutzerfreundlichkeit zu optimieren. So schnappte ich mir die veraltete Webseite meines Onkels und entwickelte ein neues Designkonzept. Nach Abschluss des Moduls setzte ich die Webseite mit HTML, CSS und Javascript um. Diese Seite war meine erste vollständig selbst gestaltete und programmierte Webseite.',
-    technologies: ['Adobe XD', 'Balsamiq', 'HTML', 'CSS', 'JavaScript'],
+    technologies: ['Adobe XD', 'Balsamiq', 'CSS', 'HTML', 'JavaScript'],
     link: 'https://github.com/xlauriley/elektro-bleh',
     linkLabel: 'Code auschecken'
   },
@@ -79,7 +79,8 @@ export const PROJECTS: Project[] = [
       'images/project-5/logo-final.png',
       'images/project-5/heckscheibe.jpeg'
     ],
-    description: "Logoentwicklung für Fabi's kleinen Katzensitter-Service. Da der Name bewusst an 'Kiki's kleiner Lieferservice' angelehnt ist, war auch der Kundenwunsch, diese Stimmung im Logo aufzugreifen. So entstand eine kleine Hexe, die auf ihrem Besen fliegt und von ihren Katzen begleitet wird. Das Logo wurde für verschiedene Einsatzbereiche gestaltet, darunter Website, Instagram und als Grafik für die Heckscheibe des Autos.",    technologies: ['Adobe Illustrator'],
+    description: "Logoentwicklung für Fabi's kleinen Katzensitter-Service. Da der Name bewusst an 'Kiki's kleiner Lieferservice' angelehnt ist, war auch der Kundenwunsch, diese Stimmung im Logo aufzugreifen. So entstand eine kleine Hexe, die auf ihrem Besen fliegt und von ihren Katzen begleitet wird. Das Logo wurde für verschiedene Einsatzbereiche gestaltet, darunter Website, Instagram und als Grafik für die Heckscheibe des Autos.",
+    technologies: ['Adobe Illustrator'],
     link: 'https://www.instagram.com/fabiskatzensitten',
     linkLabel: 'Auf Instagram ansehen'
   },
@@ -159,7 +160,7 @@ export const PROJECTS: Project[] = [
       'images/project-9/skizzenbuch.jpeg'
     ],
     description: 'Squire Quest ist ein 3D-Unity-Spiel, das im Rahmen meines X-Reality Moduls an der IU entstanden ist und als spielerischer Ansatz für das Onboarding von Auszubildenden konzipiert wurde. Der Entwicklungsprozess umfasste die komplette Pipeline: von der ersten Idee und Skizzen über den Aufbau der Spielwelt bis hin zu technischen Umsetzung. Dabei habe ich mich in Unity und C# eingearbeitet und verschiedene Tools, Assets und Plugins genutzt. Das Spiel kann über die Plattform "itch.io" gespielt werden.',
-    technologies: ['Unity', 'Canva', 'Adobe Illustrator', 'Mixamo'],
+    technologies: ['Adobe Illustrator', 'Canva', 'Mixamo', 'Unity'],
     link: 'https://xbutterbirne.itch.io/squire-quest',
     linkLabel: 'Spiel spielen'
   }

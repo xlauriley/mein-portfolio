@@ -1,6 +1,6 @@
 .login-screen {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background: var(--win-gray);
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1rem 2rem;
-  width: 45vh;
+  width: 35dvh;
   transition: background 0.15s;
   background: rgba(255,255,255,0.5);
 
@@ -105,10 +105,10 @@
 }
 
 .login-screen__user-divider {
-  width: 22rem;
+  width: 20rem;
   height: 3px;
   background: rgba(255,255,255,0.15);
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
 }
 
 .login-screen__user-name {
@@ -174,12 +174,20 @@
 
 
 // ------------- MEDIA QUERIES -------------
-//Smartphone
-@media screen and (max-width: 460px) {
+@media (max-width: 768px) {
   .login-screen__header {
     flex-direction: column;
     text-align: center;
   }
+
+  .login-screen__portfolio-title {
+    font-size: 1.2rem;
+  }
+
+  .login-screen__header-subtitle {
+    font-size: 0.8rem;
+  }
+
 
   .login-screen__header-divider {
     display: none;
@@ -192,5 +200,9 @@
   .login-screen__user {
     flex-direction: column;
     width: 30dvh;
+  }
+
+  .login-screen__user-divider {
+    width: 12rem;
   }
 }
