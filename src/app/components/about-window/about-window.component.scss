@@ -215,6 +215,7 @@ table {
   font-size: 0.8rem;
   line-height: 1.6;
   color: black;
+  font-style: italic;
 }
 
 .about-window__spotify {
@@ -308,7 +309,7 @@ table {
 // ── Lebenslauf ────────────────────────────────────────────
 
 .about-window__cv {
-  border: 2px inset var(--win-gray-dark);
+  border: 2px inset var(--win-gray);
 }
 
 
