@@ -55,7 +55,7 @@ export class DesktopComponent implements OnInit {
     } else if (icon.type === 'home') {
       width = 550;
     } else if (icon.type === 'minesweeper') {
-        width = 300;
+      width = 300;
     } else if (icon.type === 'paint') {
       width = 500;
     }
